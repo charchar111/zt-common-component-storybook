@@ -1,0 +1,16 @@
+export const allowExtension = [
+  "xls",
+  "xlsx",
+  "ppt",
+  "pptx",
+  "doc",
+  "docx",
+  "pdf",
+  "hwp",
+  "hwpx",
+  "png",
+  "jpg",
+  "jpeg",
+  "gif",
+  "zip",
+];
