@@ -3,11 +3,10 @@ import React, { useEffect, useRef } from "react";
 import {
   checkAllowExtensionToFiles,
   checkOverMaxSizeToFiles,
-} from "./input/FileUploader/util/util";
-import FileUploader from "./input/FileUploader/FileUploader";
-import icoUploadFileUrl from "../assets/images/ico_upload_file.svg";
-import { useFileForm } from "./input/FileUploader/Wrapper/hook";
-import { useFileController } from "./input/FileUploader/Controller/hook";
+} from "@components/input/FileUploader/util/util";
+import { FileUploader, icoUploadFileUrl } from "@components/input/FileUploader";
+import { useFileForm } from "@components/input/FileUploader/Wrapper/hook";
+import { useFileController } from "@components/input/FileUploader/Controller/hook";
 
 export default function Form() {
   const fileForm = useFileForm();

@@ -1,8 +1,7 @@
 // @ts-check
-import React from "react";
-import icoXmark from "../../../../assets/images/ico_xmark.svg";
 import "../style/FileUploaderStyle.scss";
 import { FileWithMetadata } from "../type";
+import { icoXmarkUrl } from "..";
 
 export default function Options({
   reset,
@@ -47,7 +46,7 @@ export default function Options({
         onClick={reset}
         className="mo_fileuploder_resetButton"
       >
-        <img src={icoXmark} alt="" />
+        <img src={icoXmarkUrl} alt="" />
         <span>전체파일 삭제</span>
       </button>
     </div>

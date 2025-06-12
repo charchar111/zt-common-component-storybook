@@ -1,10 +1,9 @@
-import React from "react";
 import "../style/FileUploaderStyle.scss";
 import { FileWithMetadata, IFileUploderContext } from "../type";
 
 import { allowExtension } from "../constant";
-import icoXmark from "../../../../assets/images/ico_xmark.svg";
 import { formatByte } from "../util/util";
+import { icoXmarkUrl } from "..";
 interface FileStacksProps {
   file: File | FileWithMetadata;
   onDelete: IFileUploderContext["deleteFileList"];
@@ -44,7 +43,7 @@ export default function FileStack({ file, onDelete }: FileStacksProps) {
             className="delete-button"
             onClick={() => onDelete && onDelete(fileData)}
           >
-            <img src={icoXmark} alt="" />
+            <img src={icoXmarkUrl} alt="" />
             <span>삭제</span>
           </button>
         </div>

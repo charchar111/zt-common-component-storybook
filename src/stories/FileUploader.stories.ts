@@ -1,30 +1,45 @@
+import { Form as FileUploaderForm } from "@/components/input/FileUploader";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import Form from "../components/Form";
+/**
+ * 공용 모듈: 파일 업로더
+ *
+ * 아래 KRDS 파일 업로더 구현 사항을 참조하여 작성되었습니다.
+ *
+ * https://www.krds.go.kr/html/site/component/component_09_04.html
+ *
+ * Primary : 파일 업로더의 기본 사용 예시를 보여줍니다.
+ *
+ *
+ * 의존성
+ * 이 모듈의 의존성은 다음과 같습니다.
+ *
+ * 기본
+ * ```
+ * npm install file-type mime mime-db mime-lite react-dropzone react-hook-form
+ * ```
+ *
+ * 버전 명시 - 위 명령어가 버전 오류가 뜨는 경우 사용하세요
+ * ```
+ * npm install file-type@^19.6.0 mime@^4.0.6 mime-db@^1.53.0 mime-lite@^1.0.3 react-dropzone@^14.3.5 react-hook-form@^7.54.2
+ * ```
+ */
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
+// 스토리북 메타데이터를 정의합니다.
+// 이 메타데이터는 스토리북이 컴포넌트를 렌더링하는 데 사용됩니다.
 const meta = {
-  title: "Example/FileUploader",
-  component: Form,
+  title: "모듈/FileUploader",
+  component: FileUploaderForm,
   parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
+    // 컴포넌트가 렌더링되는 캔버스 내 레이아웃을 중앙으로 설정
     layout: "centered",
   },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
+  // props 기반 자동 문서화를 활성화
   tags: ["autodocs"],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  argTypes: {},
-  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: {},
-} satisfies Meta<typeof Form>;
+} satisfies Meta<typeof FileUploaderForm>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary: Story = {
-  args: {
-    primary: true,
-    label: "Button",
-  },
-};
+export const Primary: Story = {};
