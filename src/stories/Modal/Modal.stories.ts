@@ -1,5 +1,6 @@
 import { Form as FileUploaderForm } from "@/components/input/FileUploader";
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import ResizeDnd from "./examples/ResizeDnd";
 
 /**
  * 공용 모듈: 모달
@@ -29,14 +30,14 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 // 이 메타데이터는 스토리북이 컴포넌트를 렌더링하는 데 사용됩니다.
 const meta = {
   title: "모듈/Modal",
-  component: FileUploaderForm,
+  component: ResizeDnd,
   parameters: {
     // 컴포넌트가 렌더링되는 캔버스 내 레이아웃을 중앙으로 설정
     layout: "centered",
   },
   // props 기반 자동 문서화를 활성화
   tags: ["autodocs"],
-} satisfies Meta<typeof FileUploaderForm>;
+} satisfies Meta<typeof ResizeDnd>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
