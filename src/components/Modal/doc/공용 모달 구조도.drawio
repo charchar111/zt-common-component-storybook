@@ -1,0 +1,134 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="페이지-1" id="TxaxPBAF4C3YXnJpTXHv">
+    <mxGraphModel dx="7917" dy="5269" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="-500" width="1310" height="1650" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-30" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry y="-60" width="1050" height="940" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-31" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="rAcPGJjU0CgNV1l1ssf5-30" vertex="1">
+          <mxGeometry width="1050" height="940" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-32" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;모달 렌더러(ModalRenderer)&lt;/h1&gt;&lt;div&gt;컨셉&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;모달의 렌더링을 총괄하는 컴포넌트&lt;/span&gt;&lt;/div&gt;&lt;div&gt;프로젝트의 루트 단에 선언&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 항상 렌더링되어야 함&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 앱 컴포넌트를 감쌀 필요는 없음&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;상태 저장&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;역할&lt;/div&gt;&lt;div&gt;렌더링 모달 아이디&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;왜 전역인가?&lt;/div&gt;&lt;div&gt;a: 복수 모달 렌더링 시, 서로 꼬이지 말라고&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="rAcPGJjU0CgNV1l1ssf5-30" vertex="1">
+          <mxGeometry width="350" height="163.48" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-25" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="95" y="110" width="850" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-23" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="rAcPGJjU0CgNV1l1ssf5-25" vertex="1">
+          <mxGeometry width="850" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-24" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;모달 오버레이&lt;/h1&gt;&lt;div&gt;화면 전체를 덮는 반투명한&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;오버레이&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;끄거나 키기 설정&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="rAcPGJjU0CgNV1l1ssf5-25" vertex="1">
+          <mxGeometry width="180" height="118.2608695652174" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-14" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="240" y="300" width="560" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="rAcPGJjU0CgNV1l1ssf5-14" vertex="1">
+          <mxGeometry width="560" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-8" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;모달 창&lt;/h1&gt;&lt;p&gt;컨트롤러 역할을 하는 api 제공&lt;/p&gt;&lt;p&gt;끄기, 최대화, 최소화&lt;br&gt;&lt;br&gt;모달창의 상태 전달&amp;nbsp;&lt;/p&gt;&lt;p&gt;구체적인 건 미정&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="rAcPGJjU0CgNV1l1ssf5-14" vertex="1">
+          <mxGeometry width="167.8" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-11" value="api" style="rounded=0;whiteSpace=wrap;html=1;" parent="rAcPGJjU0CgNV1l1ssf5-14" vertex="1">
+          <mxGeometry x="167.79661016949152" y="10" width="186.44067796610167" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-16" value="state" style="rounded=0;whiteSpace=wrap;html=1;" parent="rAcPGJjU0CgNV1l1ssf5-14" vertex="1">
+          <mxGeometry x="370" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-13" value="" style="group" parent="rAcPGJjU0CgNV1l1ssf5-14" vertex="1" connectable="0">
+          <mxGeometry x="100" y="210" width="400" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="rAcPGJjU0CgNV1l1ssf5-13" vertex="1">
+          <mxGeometry width="400" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;모달 컨텐츠&lt;/h1&gt;&lt;p&gt;모달의 ui 부분&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="rAcPGJjU0CgNV1l1ssf5-13" vertex="1">
+          <mxGeometry width="144" height="86.89655172413794" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="rAcPGJjU0CgNV1l1ssf5-14" source="rAcPGJjU0CgNV1l1ssf5-11" target="rAcPGJjU0CgNV1l1ssf5-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="rAcPGJjU0CgNV1l1ssf5-14" source="rAcPGJjU0CgNV1l1ssf5-16" target="rAcPGJjU0CgNV1l1ssf5-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-20" value="foc 형태로 전달" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="rAcPGJjU0CgNV1l1ssf5-19" vertex="1" connectable="0">
+          <mxGeometry x="0.5905" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-21" value="&lt;div&gt;기구현 되었는데&lt;/div&gt;&lt;div&gt;아키텍처에 그리지 않음&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;메모라이징&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-530" y="170" width="120" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="rAcPGJjU0CgNV1l1ssf5-33" value="&lt;div&gt;추가 구현 필요한 거&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;현재 보는 모달이 z-index 위로 가기&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;기본 모달 루트 설정 로직 더 간단하게&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-690" y="140" width="120" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-3" value="l" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="-500" width="350" height="163.48" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-4" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1545" y="-110" width="610" height="254" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-5" value="ModalContainer" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-4">
+          <mxGeometry width="610" height="254" as="geometry">
+            <mxRectangle x="110" y="90" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-6" value="기능&lt;div&gt;최대화&lt;/div&gt;&lt;div&gt;끄기&lt;/div&gt;&lt;div&gt;리사이즈&lt;/div&gt;&lt;div&gt;드래그 이동&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-5">
+          <mxGeometry y="26" width="610" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-5">
+          <mxGeometry y="140" width="610" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-8" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;modalBbox&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="250" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-9" value="모달창의 레이아웃(크기 및 위치)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-8">
+          <mxGeometry y="21" width="200" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-10" value="위치(x,y)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-8">
+          <mxGeometry y="70" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-11" value="사이즈(width, height)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-8">
+          <mxGeometry y="130" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-12" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;modalFlag&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="250" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-13" value="모달창에서 특수 모드 활성화 상태" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-12">
+          <mxGeometry y="21" width="200" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-14" value="최대화 모드 여부(isMaximize)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-12">
+          <mxGeometry y="70" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-15" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;modalController&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="530" width="310" height="265" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-16" value="모달창의 주요 기능 함수를 자식 컴포넌트에게 전달" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-15">
+          <mxGeometry y="21" width="310" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-17" value="&lt;div&gt;&amp;nbsp; 모달창 종려 handleClose&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-15">
+          <mxGeometry y="70" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-18" value="&amp;nbsp; &amp;nbsp; 모달창 최대화/되돌리기 - 함수(handleMaximize)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-15">
+          <mxGeometry y="130" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-19" value="모달창 드래그&lt;div&gt;&amp;nbsp;- 이벤트 리스너 함수 객체 (handleDragListener)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-15">
+          <mxGeometry y="200" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-20" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1370" y="470" width="960" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-20">
+          <mxGeometry width="960" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QG4Ev9cWRz7ItKwrJFo0-22" value="feature-global" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="QG4Ev9cWRz7ItKwrJFo0-20">
+          <mxGeometry width="110" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

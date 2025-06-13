@@ -7,7 +7,7 @@ import ModalRenderer from "@/components/Modal/ui/ModalRenderer";
 import { getModalContainerStyle } from "@/components/Modal/util/mapping";
 import React, { useCallback, useMemo, useState } from "react";
 
-export default function ResizeDnd() {
+export default function Controller() {
   const [openModalId, setOpenModalId] = useState<string | undefined>();
   const setModalJotai = useModalsStore((state) => state.setState);
   const modalStyle = useMemo(() => getModalContainerStyle("setting"), []);

@@ -21,6 +21,7 @@ export default function Dim({
         onClick={(event: React.MouseEvent) => {
           if (event.target !== event.currentTarget) return;
           if (!isCloseOnDimClick) return;
+
           setModalSlice((prev) => ({
             ...prev,
             modals: [],

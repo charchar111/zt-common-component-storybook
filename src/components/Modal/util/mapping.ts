@@ -1,7 +1,8 @@
 export function getModalContainerStyle(type: "default" | "setting") {
-  const style = {
-    width: "300px",
+  const style: Partial<Record<keyof CSSStyleDeclaration, string>> = {
+    minWidth: "400px",
     height: "300px",
+    overflow: "auto",
   };
 
   switch (type) {
