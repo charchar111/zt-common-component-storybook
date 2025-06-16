@@ -5,12 +5,7 @@ export default function ModalContent({ children }: PropsWithChildren) {
   return (
     <SLayout>
       {children}
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint
-        doloremque vero voluptates earum iste exercitationem id delectus quas
-        ab? Nihil sint consectetur eveniet aspernatur at corrupti, veniam magni
-        unde?
-      </div>
+      <div></div>
     </SLayout>
   );
 }

@@ -110,9 +110,15 @@ export const MultipleRender: Story = {
 export const All: Story = {
   args: {
     id: "my_All1",
+    dim: {
+      active: false,
+    },
     container: {
       resize: { able: true },
       dragAndDrop: { able: true },
     },
+    title: "헤더를 잡고 드래그 해보세요",
+    showCancelBtn: true,
+    showMultipleModal: true,
   },
 };
