@@ -15,14 +15,14 @@ BrowserDownloader : 파일 다운로더의 기본 사용 예시를 보여줍니�
 
 아래 링크로 한번 접속해주세요. hello world가 보이면 정상입니다.\r
 
-<a href="https://zt-api-for-common.onrender.com/">https://zt-api-for-common.onrender.com/ </a>\r
+<a target="_blank" href="https://zt-api-for-common.onrender.com/">https://zt-api-for-common.onrender.com/ </a>\r
 
 <br/>\r
 <hr/>\r
 
 의존성\r
 
-의존성이 없습니다.`}}},tags:["autodocs"],argTypes:{requests:{control:{type:"object"},description:"파일 다운로드 요청을 위한 url, method, enctype 등의 정보를 담은 객체"}}},s="https://zt-api-for-common.onrender.com",i={name:"단일 파일 다운로드",args:{requests:[{method:"POST",enctype:"application/x-www-form-urlencoded",url:`${s}/download`,parameters:void 0}],label:"파일 다운로드"}},p={name:"복수 파일 다운로드",args:{requests:[{method:"POST",enctype:"application/x-www-form-urlencoded",url:`${s}/download`,parameters:void 0},{method:"POST",enctype:"application/x-www-form-urlencoded",url:`${s}/download`,parameters:void 0},{method:"POST",enctype:"application/x-www-form-urlencoded",url:`${s}/download`,parameters:void 0}],label:"파일 다운로드"}};var y,f,b;i.parameters={...i.parameters,docs:{...(y=i.parameters)==null?void 0:y.docs,source:{originalSource:`{
+의존성이 없습니다.`}}},tags:["autodocs"],argTypes:{requests:{control:{type:"object"},description:"파일 다운로드 요청을 위한 url, method, enctype 등의 정보를 담은 객체"}}},s="https://zt-api-for-common.onrender.com",i={name:"단일 파일 다운로드",args:{requests:[{method:"POST",enctype:"application/x-www-form-urlencoded",url:`${s}/download`,parameters:void 0}],label:"단일 파일 다운로드"}},p={name:"복수 파일 다운로드",args:{requests:[{method:"POST",enctype:"application/x-www-form-urlencoded",url:`${s}/download`,parameters:void 0},{method:"POST",enctype:"application/x-www-form-urlencoded",url:`${s}/download`,parameters:void 0},{method:"POST",enctype:"application/x-www-form-urlencoded",url:`${s}/download`,parameters:void 0}],label:"복수 파일 다운로드"}};var y,f,b;i.parameters={...i.parameters,docs:{...(y=i.parameters)==null?void 0:y.docs,source:{originalSource:`{
   name: "단일 파일 다운로드",
   args: {
     requests: [{
@@ -32,7 +32,7 @@ BrowserDownloader : 파일 다운로더의 기본 사용 예시를 보여줍니�
       url: \`\${backendDomain}/download\`,
       parameters: undefined
     }],
-    label: "파일 다운로드"
+    label: "단일 파일 다운로드"
   }
 }`,...(b=(f=i.parameters)==null?void 0:f.docs)==null?void 0:b.source}}};var T,S,D;p.parameters={...p.parameters,docs:{...(T=p.parameters)==null?void 0:T.docs,source:{originalSource:`{
   name: "복수 파일 다운로드",
@@ -56,6 +56,6 @@ BrowserDownloader : 파일 다운로더의 기본 사용 예시를 보여줍니�
       url: \`\${backendDomain}/download\`,
       parameters: undefined
     }],
-    label: "파일 다운로드"
+    label: "복수 파일 다운로드"
   }
 }`,...(D=(S=p.parameters)==null?void 0:S.docs)==null?void 0:D.source}}};const v=["SingleFileDownload","MultiFileDownload"];export{p as MultiFileDownload,i as SingleFileDownload,v as __namedExportsOrder,j as default};

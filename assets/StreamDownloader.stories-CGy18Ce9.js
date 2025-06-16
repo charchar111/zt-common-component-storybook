@@ -15,7 +15,7 @@ BrowserDownloader : 파일 다운로더의 기본 사용 예시를 보여줍니�
 
 아래 링크로 한번 접속해주세요. hello world가 보이면 정상입니다.\r
 
-<a href="https://zt-api-for-common.onrender.com/">https://zt-api-for-common.onrender.com/ </a>\r
+<a target="_blank"  href="https://zt-api-for-common.onrender.com/">https://zt-api-for-common.onrender.com/ </a>\r
 
 <br/>\r
 <hr/>\r
