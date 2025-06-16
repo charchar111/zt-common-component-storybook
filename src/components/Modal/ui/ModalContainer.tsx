@@ -1,8 +1,11 @@
-import { useMemo, useRef, useState } from "react";
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import { ImodalsComponentAtom, useModalsStore } from "../data/atom/modalAtom";
 import ModalResizing from "../features/ModalResizing";
 import ModalDefaultControl from "../features/ModalDefaultControl";
-import { MODAL_DEFAULT_SIZE_UNIT_PIXEL } from "../constants/constants";
+import {
+  MODAL_DEFAULT_SIZE_UNIT_PIXEL,
+  // MODAL_MIN_SIZE_UNIT_PIXEL,
+} from "../constants/constants";
 import {
   IModalBbox,
   IModalController,
@@ -13,12 +16,14 @@ import ModalDraggable from "../features/dragAndDrop/ModalDraggable";
 import { extractNumberFromStyleValue } from "../util/format";
 
 interface IModalContainer {
+  innerBoundSizeUnitPixel: number;
   modal: ImodalsComponentAtom;
   onBringToFront?: () => void;
 }
 
 // 모달 창
 export default function ModalContainer({
+  innerBoundSizeUnitPixel,
   onBringToFront,
   modal,
 }: IModalContainer) {
@@ -31,8 +36,10 @@ export default function ModalContainer({
     const height =
       modal.container?.style?.height || MODAL_DEFAULT_SIZE_UNIT_PIXEL.HEIGHT;
 
-    // todo: 각 단위를 px로 계산하는 공식 필요
-    return {
+    // as-is : px  단위로만 위치 설정 가능
+    // to-be: 각 단위를 px로 계산하는 공식 필요
+
+    const model = {
       x:
         (document.documentElement.clientWidth -
           (extractNumberFromStyleValue(width) ||
@@ -45,10 +52,37 @@ export default function ModalContainer({
         2,
       width,
       height,
+      minWidth: modal.container?.style?.minWidth || width,
+      minHeight: modal.container?.style?.minHeight || height,
     };
+
+    return model;
   });
 
   console.log("modalBbox", modalBbox);
+
+  useLayoutEffect(() => {
+    if (modalBbox.width !== "auto" && modalBbox.height !== "auto") return;
+    console.log("자동 재조정");
+    const target = document.querySelector(".ModalView_root");
+    const targetBound = target && target?.getBoundingClientRect();
+    if (!targetBound) return;
+
+    setModalBbox((prev) => ({
+      ...prev,
+      x: (window.innerWidth - targetBound.width) / 2,
+      y: (window.innerHeight - targetBound.height) / 2,
+      width: targetBound.width,
+      height: targetBound.height,
+
+      ...(modalBbox.minWidth && modalBbox.minWidth !== "auto"
+        ? null
+        : { minWidth: targetBound.width }),
+      ...(modalBbox.minHeight && modalBbox.minHeight !== "auto"
+        ? null
+        : { minHeight: targetBound.height }),
+    }));
+  }, []);
 
   /**
    * 모달의 일부 기능 활성화 여부
@@ -90,12 +124,12 @@ export default function ModalContainer({
       <ModalDraggable
         id={modal.metadata.id}
         active={modalFlag.isDraggable && !modalFlag.isMaximize}
-        modalBbox={modalBbox}
         setModalBbox={setModalBbox}
         modalFlag={modalFlag}
         setModalController={setModalController}
         modalRef={modalRef}
         onBringToFront={onBringToFront}
+        innerBoundSizeUnitPixel={innerBoundSizeUnitPixel}
       >
         <ModalDefaultControl
           id={modal.metadata.id}

@@ -21,16 +21,11 @@ import {
   IModalRef,
   IResizeStartPosition,
 } from "../../types/state";
-import {
-  convertStyleValue,
-  extractNumberFromStyleValue,
-} from "../../util/format";
-import { MODAL_INNER_BOUND_SIZE_UNIT_PIXEL } from "../../constants/constants";
+import { extractNumberFromStyleValue } from "../../util/format";
 import { SyntheticListenerMap } from "@dnd-kit/core/dist/hooks/utilities";
 
 interface IModalDraggableItem {
   id: string;
-  modalBbox: IModalBbox;
   // onMouseDown: (() => void) | undefined;
   onMouseDown: (() => void) | undefined;
   setModalController: React.Dispatch<React.SetStateAction<IModalController>>;
@@ -38,7 +33,6 @@ interface IModalDraggableItem {
 function ModalDraggableItem({
   children,
   id,
-  modalBbox,
   onMouseDown,
   setModalController,
 }: PropsWithChildren & IModalDraggableItem) {
@@ -67,15 +61,6 @@ function ModalDraggableItem({
   return (
     <SLayout
       ref={setNodeRef}
-      // style={{
-      //   width: convertStyleValue(modalBbox.width),
-      //   height: convertStyleValue(modalBbox.height),
-
-      //   // ...style,
-      // }}
-      // 문제: 마우스 딜레이를 걸어서, onMouseDown가 늦게 실행됨.
-      // onMouseDown에는 바로 실행되어야 하는 이벤트가 있음()
-      // {...customListener}
       {...attributes}
       className="ModalDraggable__SLayout"
     >
@@ -94,24 +79,24 @@ const SLayout = styled.div`
 interface IModalDraggable {
   id: string;
   active: boolean;
-  modalBbox: IModalBbox;
   setModalBbox: React.Dispatch<React.SetStateAction<IModalBbox>>;
   modalFlag: IModalFlag;
   setModalController: React.Dispatch<React.SetStateAction<IModalController>>;
   modalRef: React.RefObject<IModalRef>;
   onBringToFront?: () => void;
+  innerBoundSizeUnitPixel: number;
 }
 
 export default function ModalDraggable({
   id,
   active,
-  modalBbox,
   setModalBbox,
   modalFlag,
   setModalController,
   modalRef,
   children,
   onBringToFront,
+  innerBoundSizeUnitPixel,
 }: PropsWithChildren & IModalDraggable) {
   const [resizeStartPosition, setResizeStartPosition] =
     useState<IResizeStartPosition>({
@@ -124,10 +109,10 @@ export default function ModalDraggable({
     onBringToFront && onBringToFront();
     setResizeStartPosition({
       x: extractNumberFromStyleValue(
-        modalRef.current?.resizableContainer?.resizable?.style.left,
+        modalRef.current?.resizableContainer?.resizable?.style.left
       ), // 현재 크기의 width 저장
       y: extractNumberFromStyleValue(
-        modalRef.current?.resizableContainer?.resizable?.style.top,
+        modalRef.current?.resizableContainer?.resizable?.style.top
       ), // 현재 크기의 height 저장
     });
   }, [
@@ -152,26 +137,26 @@ export default function ModalDraggable({
             Math.max(
               Number(extractNumberFromStyleValue(resizeStartPosition.x)) +
                 delta.x,
-              0,
+              0
             ),
             document.documentElement.clientWidth -
               extractprevValueWidth -
-              MODAL_INNER_BOUND_SIZE_UNIT_PIXEL * 2,
+              innerBoundSizeUnitPixel * 2
           ),
           y: Math.min(
             Math.max(
               Number(extractNumberFromStyleValue(resizeStartPosition.y)) +
                 delta.y,
-              0,
+              0
             ),
             document.documentElement.clientHeight -
               extractprevValueHeight -
-              MODAL_INNER_BOUND_SIZE_UNIT_PIXEL * 2,
+              innerBoundSizeUnitPixel * 2
           ),
         };
       });
     },
-    [resizeStartPosition, setModalBbox],
+    [resizeStartPosition, setModalBbox]
   );
   //   최대화 모드 활성화 시, 비활성화
   const isActiveDrag = active && !modalFlag.isMaximize;
@@ -202,7 +187,6 @@ export default function ModalDraggable({
       <ModalDraggableItem
         onMouseDown={isActiveDrag ? handleDragStart : undefined}
         id={id}
-        modalBbox={modalBbox}
         setModalController={setModalController}
       >
         {children}

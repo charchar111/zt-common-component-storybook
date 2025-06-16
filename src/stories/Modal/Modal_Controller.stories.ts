@@ -30,6 +30,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
+
 export const CancelButton: Story = {
   name: "Cancel button",
   args: {
@@ -52,6 +53,10 @@ export const Resize: Story = {
   args: {
     id: "my_Resize1",
     container: {
+      // style: {
+      //   minWidth: "200px",
+      //   minHeight: "300px",
+      // },
       resize: { able: true },
     },
   },
@@ -61,12 +66,47 @@ export const DragAndDrop: Story = {
 
   args: {
     id: "DragAndDrop",
+
     title: "헤더를 잡고 드래그 해보세요",
     container: {
       dragAndDrop: { able: true },
     },
   },
 };
+
+export const DragAndDropInbound: Story = {
+  name: "DragAndDrop view (화면 내 100px 내부 여백)",
+
+  args: {
+    id: "DragAndDrop",
+    dim: {
+      active: true,
+      innerBoundSizeUnitPixel: 100,
+    },
+    title: "헤더를 잡고 드래그 해보세요",
+    container: {
+      dragAndDrop: { able: true },
+    },
+  },
+};
+
+// todo
+export const MultipleRender: Story = {
+  name: "복수의 모달 표출",
+  args: {
+    title: "첫번째 모달",
+    id: "my_Cancel1",
+    dim: {
+      active: false,
+    },
+    container: {
+      dragAndDrop: { able: true },
+    },
+    showCancelBtn: true,
+    showMultipleModal: true,
+  },
+};
+
 export const All: Story = {
   args: {
     id: "my_All1",

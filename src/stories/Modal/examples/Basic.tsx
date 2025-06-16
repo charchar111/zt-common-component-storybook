@@ -17,6 +17,7 @@ import React, {
 } from "react";
 import styled from "styled-components";
 import { useShallow } from "zustand/shallow";
+import MultipleModal from "./MultipleModal";
 
 export type IVariant = "alert" | "confirm" | "prompt";
 
@@ -34,6 +35,7 @@ export default function Basic({
   container,
   showCancelBtn,
   showMaximizeBtn,
+  showMultipleModal,
 }: {
   title?: string;
   dim?: ImodalsAtom["dim"];
@@ -43,6 +45,7 @@ export default function Basic({
   container?: ImodalsAtom["modals"]["0"]["container"];
   showCancelBtn?: boolean;
   showMaximizeBtn?: boolean;
+  showMultipleModal?: boolean;
 }) {
   const [openModalId, setOpenModalId] = useState<string | undefined>();
   const { setModalJotai, modals } = useModalsStore(
@@ -54,6 +57,7 @@ export default function Basic({
 
   // 모달 컨테이너 스타일 프리셋을 가져옴
   const modalStyle = useMemo(() => getModalContainerStyle("hug"), []);
+  // const modalStyle = useMemo(() => getModalContainerStyle("default"), []);
 
   useEffect(() => {
     if (openModalId && !modals.find((el) => el.metadata.id === id)) {
@@ -89,8 +93,12 @@ export default function Basic({
           },
 
           container: {
-            style: modalStyle,
             ...container,
+
+            style: {
+              ...modalStyle,
+              ...container?.style,
+            },
           },
 
           component: ({ modalController, modalFlag }) => (
@@ -125,6 +133,7 @@ export default function Basic({
   return (
     <SLayout className="layout">
       <button onClick={handleClickBtnOpenModal}>모달 열기</button>
+      {!showMultipleModal ? null : <MultipleModal />}
       <ModalRenderer />
     </SLayout>
   );

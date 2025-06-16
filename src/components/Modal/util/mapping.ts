@@ -1,6 +1,6 @@
 export function getModalContainerStyle(type: "default" | "hug" | "setting") {
   const style: Partial<Record<keyof CSSStyleDeclaration, string>> = {
-    minWidth: "400px",
+    width: "400px",
     height: "300px",
     overflow: "auto",
   };

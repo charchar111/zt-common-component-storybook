@@ -6,6 +6,8 @@ export interface IModalBbox {
   y: string | number | undefined;
   width: string | number | undefined;
   height: string | number | undefined;
+  minWidth: string | number | undefined;
+  minHeight: string | number | undefined;
 }
 
 export interface IModalController {

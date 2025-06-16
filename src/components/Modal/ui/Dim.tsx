@@ -1,6 +1,5 @@
 import React, { PropsWithChildren } from "react";
 import styled, { css } from "styled-components";
-import { MODAL_INNER_BOUND_SIZE_UNIT_PIXEL } from "../constants/constants";
 import {
   ImodalsAtom,
   ImodalsAtomDim,
@@ -11,6 +10,7 @@ interface IDim {
   active: boolean;
   isCloseOnDimClick: boolean; // 딤 클릭 시 모달 닫기 여부
   styles?: ImodalsAtomDim["styles"] | undefined;
+  innerBoundSizeUnitPixel: number; // 모달 바운더리의 내부 여백
 }
 
 export default function Dim({
@@ -18,11 +18,17 @@ export default function Dim({
   isCloseOnDimClick,
   active,
   styles,
+  innerBoundSizeUnitPixel,
 }: PropsWithChildren & IDim) {
   const setModalSlice = useModalsStore((state) => state.setState);
 
   return (
-    <SDimRoot style={styles?.dimRoot} className={`dim_root`} $active={active}>
+    <SDimRoot
+      $innerBoundSizeUnitPixel={innerBoundSizeUnitPixel}
+      style={styles?.dimRoot}
+      className={`dim_root`}
+      $active={active}
+    >
       <SInnerDim
         style={styles?.dimRoot}
         className={`dim_inner`}
@@ -62,7 +68,8 @@ const SDimRoot = styled.section<any>`
 
   // re-resizable 모달을 내부로 가두기 위한 패딩\
   // 드래그 및 드롭 기능의 경계선
-  padding: ${MODAL_INNER_BOUND_SIZE_UNIT_PIXEL}px;
+  padding: ${({ $innerBoundSizeUnitPixel }) =>
+    `${$innerBoundSizeUnitPixel}px` || 0};
   height: 100%;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.6);

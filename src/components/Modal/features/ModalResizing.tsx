@@ -16,10 +16,7 @@ import {
   IModalRef,
   IResizeStartPosition,
 } from "../types/state";
-import {
-  MODAL_DEFAULT_SIZE_UNIT_PIXEL,
-  MODAL_MIN_SIZE_UNIT_PIXEL,
-} from "../constants/constants";
+// import { MODAL_MIN_SIZE_UNIT_PIXEL } from "../constants/constants";
 import { convertStyleValue } from "../util/format";
 
 interface IModalContainer {
@@ -169,17 +166,19 @@ export default function ModalResizing({
 
   return (
     <Resizable
+      // ModalView_root: 모달 사이즈 계산용 query-selector 를 위한 클래스 네임임. 지우지 말 것
+      className="ModalView_root"
       ref={(el) => {
         if (modalRef.current) {
           modalRef.current.resizableContainer = el;
         }
       }}
-      defaultSize={{
-        // width: MODAL_DEFAULT_SIZE_UNIT_PIXEL.WIDTH,
-        // height: MODAL_DEFAULT_SIZE_UNIT_PIXEL.HEIGHT,
-        width: useMemo(() => modalBbox.width, []),
-        height: useMemo(() => modalBbox.height, []),
-      }}
+      // 테스트: 없어도될 것 같음
+      // 임시로 끔
+      // defaultSize={{
+      //   width: useMemo(() => modalBbox.width, []),
+      //   height: useMemo(() => modalBbox.height, []),
+      // }}
       enable={
         active && {
           top: true,
@@ -202,12 +201,15 @@ export default function ModalResizing({
         // overflow: "hidden",
         pointerEvents: "auto",
       }}
-      minWidth={MODAL_MIN_SIZE_UNIT_PIXEL.WIDTH}
-      minHeight={MODAL_MIN_SIZE_UNIT_PIXEL.HEIGHT}
+      // minWidth={modalBbox?.minWidth || MODAL_MIN_SIZE_UNIT_PIXEL.WIDTH}
+      // minHeight={modalBbox?.minHeight || MODAL_MIN_SIZE_UNIT_PIXEL.HEIGHT}
+      minWidth={modalBbox?.minWidth}
+      minHeight={modalBbox?.minHeight}
       size={{ width: modalBbox.width, height: modalBbox.height }}
-      // 이거 꼭 있어야 함!!
+      // 이거 꼭 있어야 함!! 모달창이 화면 바깥으로 빠져나가지 않도록 설정
       boundsByDirection={true}
       bounds={"parent"}
+      //
     >
       <SContainer
         onClick={() => {

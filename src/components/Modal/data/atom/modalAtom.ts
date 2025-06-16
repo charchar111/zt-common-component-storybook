@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { IModalController, IModalFlag } from "../../types/state";
+import { MODAL_INNER_BOUND_SIZE_UNIT_PIXEL } from "../../constants/constants";
 
 /**
  * 모달에 사용되는 컴포넌트 정보 정의
@@ -57,6 +58,7 @@ export interface ImodalsComponentAtom {
 export interface ImodalsAtomDim {
   active: boolean;
   isCloseOnDimClick?: boolean; // 딤 클릭 시 모달 닫기 여부
+  innerBoundSizeUnitPixel?: number; // 모달이 드래그될 수 있는 바운더리
   styles?: {
     dimRoot?: Partial<Record<keyof CSSStyleDeclaration, string>>;
     dimInner?: Partial<Record<keyof CSSStyleDeclaration, string>>;
@@ -100,6 +102,7 @@ export const useModalsStore = create<ImodalsAtom>((set, get) => ({
   dim: {
     active: true,
     isCloseOnDimClick: true,
+    innerBoundSizeUnitPixel: MODAL_INNER_BOUND_SIZE_UNIT_PIXEL,
   },
 
   modals: [],
