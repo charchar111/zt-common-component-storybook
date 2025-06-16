@@ -59,11 +59,8 @@ export default function ModalContainer({
     return model;
   });
 
-  console.log("modalBbox", modalBbox);
-
   useLayoutEffect(() => {
     if (modalBbox.width !== "auto" && modalBbox.height !== "auto") return;
-    console.log("자동 재조정");
     const target = document.querySelector(".ModalView_root");
     const targetBound = target && target?.getBoundingClientRect();
     if (!targetBound) return;
