@@ -1,23 +1,31 @@
 import React, { PropsWithChildren } from "react";
 import styled, { css } from "styled-components";
 import { MODAL_INNER_BOUND_SIZE_UNIT_PIXEL } from "../constants/constants";
-import { useModalsStore } from "../data/atom/modalAtom";
+import {
+  ImodalsAtom,
+  ImodalsAtomDim,
+  useModalsStore,
+} from "../data/atom/modalAtom";
 
 interface IDim {
   active: boolean;
   isCloseOnDimClick: boolean; // 딤 클릭 시 모달 닫기 여부
+  styles?: ImodalsAtomDim["styles"] | undefined;
 }
 
 export default function Dim({
   children,
   isCloseOnDimClick,
   active,
+  styles,
 }: PropsWithChildren & IDim) {
   const setModalSlice = useModalsStore((state) => state.setState);
 
   return (
-    <SDim $active={active}>
+    <SDimRoot style={styles?.dimRoot} className={`dim_root`} $active={active}>
       <SInnerDim
+        style={styles?.dimRoot}
+        className={`dim_inner`}
         onClick={(event: React.MouseEvent) => {
           if (event.target !== event.currentTarget) return;
           if (!isCloseOnDimClick) return;
@@ -30,7 +38,7 @@ export default function Dim({
       >
         {children}
       </SInnerDim>
-    </SDim>
+    </SDimRoot>
   );
 }
 
@@ -44,7 +52,7 @@ const dimStyle = {
   `,
 };
 
-const SDim = styled.section<any>`
+const SDimRoot = styled.section<any>`
   position: fixed;
   /* TODO: 모달용 z-index 상수로 교체 */
   z-index: 90;

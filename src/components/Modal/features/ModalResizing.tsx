@@ -58,7 +58,7 @@ export default function ModalResizing({
         y: ref.offsetTop, // 현재 크기의 height 저장
       });
     },
-    [setResizeStartPosition],
+    [setResizeStartPosition]
   );
   // 리사이즈 시 모달 크기 변경
   // direction 방향에 따라 아래에 if문으로 처리한 방향들은 이것들 없이는 모달 창의 left, top 값이 수정되지 않음.
@@ -112,7 +112,7 @@ export default function ModalResizing({
         }));
       });
     },
-    [resizeStartPosition, setModalBbox],
+    [resizeStartPosition, setModalBbox]
   );
 
   const beforeMaximizeStyle = useRef<{
@@ -164,7 +164,7 @@ export default function ModalResizing({
         };
       }
     },
-    [modalFlag.isMaximize],
+    [modalFlag.isMaximize]
   );
 
   return (
@@ -198,7 +198,8 @@ export default function ModalResizing({
         position: "absolute",
         left: convertStyleValue(modalBbox.x),
         top: convertStyleValue(modalBbox.y),
-        overflow: "hidden",
+        // 자식 요소에 그림자 렌더링이 안되서 끔. 문제 되면 다시 수정
+        // overflow: "hidden",
         pointerEvents: "auto",
       }}
       minWidth={MODAL_MIN_SIZE_UNIT_PIXEL.WIDTH}
@@ -235,7 +236,8 @@ const containerStyle = {
 const SContainer = styled.section<any>`
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* 자식 요소에 그림자 렌더링이 안되서 끔. 문제 되면 다시 수정 */
+  /* overflow: hidden; */
   background-color: white;
   border-radius: 8px;
   pointer-events: auto;

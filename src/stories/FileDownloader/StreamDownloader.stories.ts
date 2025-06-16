@@ -21,7 +21,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
  *
  * 아래 링크로 한번 접속해주세요. hello world가 보이면 정상입니다.
  *
- * <a href="https://zt-api-for-common.onrender.com/">https://zt-api-for-common.onrender.com/ </a>
+ * <a target="_blank"  href="https://zt-api-for-common.onrender.com/">https://zt-api-for-common.onrender.com/ </a>
  *
  * <br/>
  * <hr/>

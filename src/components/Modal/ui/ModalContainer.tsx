@@ -48,6 +48,8 @@ export default function ModalContainer({
     };
   });
 
+  console.log("modalBbox", modalBbox);
+
   /**
    * 모달의 일부 기능 활성화 여부
    * isMaximize - 모달창 최대화

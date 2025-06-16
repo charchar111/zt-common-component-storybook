@@ -50,7 +50,6 @@ export default function ModalRenderer() {
   } satisfies Omit<ImodalsAtom, "setState">;
 
   const hasDuplicateIds = useMemo(() => {
-    console.log("hasDuplicateIds modals", modals);
     const ids = modals.map((el) => el.metadata.id);
     const uniqueIds = new Set(ids);
     return ids.length !== uniqueIds.size;
@@ -129,7 +128,11 @@ export default function ModalRenderer() {
   return !show
     ? null
     : createPortal(
-        <Dim active={dim.active} isCloseOnDimClick={dim.isCloseOnDimClick}>
+        <Dim
+          styles={dim?.styles}
+          active={dim.active}
+          isCloseOnDimClick={dim.isCloseOnDimClick}
+        >
           {modals.map((el, idx) => (
             <ModalContainer
               onBringToFront={setModalTop(el.metadata.id)}

@@ -14,7 +14,10 @@ export default function ModalLayout({
 const SLayout = styled.div<any>`
   display: flex;
   flex-direction: column;
-  /* min-height: 100%; */
   height: 100%;
-  /* background-color: white; */
+
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 `;

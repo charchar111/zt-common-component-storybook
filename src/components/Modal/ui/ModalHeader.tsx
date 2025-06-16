@@ -5,10 +5,12 @@ import CloseSvg from "../assets/cancel.svg";
 import Fullscreen from "../assets/전체화면.png";
 
 interface IModalHeader {
-  title: string;
+  title?: string;
   modalController?: IModalController;
   modalFlag?: IModalFlag;
   onClose?: () => void;
+  showCancelBtn?: boolean;
+  showMaximizeBtn?: boolean;
 }
 
 export default function ModalHeader({
@@ -16,9 +18,13 @@ export default function ModalHeader({
   modalController,
   modalFlag,
   onClose,
+  showCancelBtn,
+  showMaximizeBtn,
 }: IModalHeader) {
+  console.log("modalController", modalFlag, modalController);
   return (
     <SLayout
+      className="layout"
       $isDraggable={Boolean(modalController?.handleDragListener)}
       onDoubleClick={() => {
         if (modalController?.handleMaximize) {
@@ -28,10 +34,10 @@ export default function ModalHeader({
       {...(modalController?.handleDragListener || null)}
     >
       <SColumn1>
-        <h5>{title}</h5>
+        <h5 className="title">{title || ""}</h5>
       </SColumn1>
       <SBtnBox>
-        {!modalFlag?.isMaximize ? null : (
+        {!showMaximizeBtn || !modalController?.handleMaximize ? null : (
           <SBtn
             $isToggle={modalFlag?.isMaximize}
             onClick={() => {
@@ -54,7 +60,7 @@ export default function ModalHeader({
           </SBtn>
         )}
 
-        {!modalController?.handleClose ? null : (
+        {!showCancelBtn || !modalController?.handleClose ? null : (
           <SBtn
             onClick={(event: React.MouseEvent) => {
               if (modalController?.handleClose) {
@@ -69,7 +75,7 @@ export default function ModalHeader({
               event.stopPropagation();
             }}
           >
-            <img src={CloseSvg} alt="" />
+            <img style={{ filter: "invert(1" }} src={CloseSvg} alt="" />
           </SBtn>
         )}
       </SBtnBox>
@@ -93,6 +99,13 @@ const SColumn1 = styled.div`
   display: flex;
 
   align-items: center;
+
+  .title {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
 `;
 
 const SBtnBox = styled.div`

@@ -20,7 +20,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
  *
  * 아래 링크로 한번 접속해주세요. hello world가 보이면 정상입니다.
  *
- * <a href="https://zt-api-for-common.onrender.com/">https://zt-api-for-common.onrender.com/ </a>
+ * <a target="_blank" href="https://zt-api-for-common.onrender.com/">https://zt-api-for-common.onrender.com/ </a>
  *
  * <br/>
  * <hr/>
@@ -71,7 +71,7 @@ export const SingleFileDownload: Story = {
         parameters: undefined,
       },
     ],
-    label: "파일 다운로드",
+    label: "단일 파일 다운로드",
   },
 };
 
@@ -104,6 +104,6 @@ export const MultiFileDownload: Story = {
         parameters: undefined,
       },
     ],
-    label: "파일 다운로드",
+    label: "복수 파일 다운로드",
   },
 };
