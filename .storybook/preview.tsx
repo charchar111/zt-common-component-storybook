@@ -1,8 +1,7 @@
 import type { Preview } from "@storybook/react-vite";
-import "../src/index.css"; // Import your global styles here
-import "../src/App.css";
+import "./reset.css"; // Import your global styles here
 import { ThemeProvider } from "styled-components";
-import themes from "../src/stories/Foundation/theme/theme";
+import themes from "../src/components/Foundation/themes/KRDS/theme";
 
 const preview: Preview = {
   decorators: [
