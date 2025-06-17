@@ -1,4 +1,4 @@
-import{j as a}from"./jsx-runtime-D_zvdyIk.js";import{B as D}from"./Basic-Dp561ALw.js";const h={title:"모듈/Modal/Basic",component:D,parameters:{layout:"centered",docs:{description:{component:`공용 모듈: 모달\r
+import{j as a}from"./iframe-Ddyl0vjK.js";import{B as D}from"./Basic-Cj6C3gcc.js";const h={title:"Components/Modal/Basic",component:D,parameters:{layout:"centered",docs:{description:{component:`공용 모듈: 모달\r
 
 
 https://www.krds.go.kr/html/site/component/component_04_05.html\r
