@@ -1,8 +1,17 @@
 import type { Preview } from "@storybook/react-vite";
 import "../src/index.css"; // Import your global styles here
 import "../src/App.css";
+import { ThemeProvider } from "styled-components";
+import themes from "../src/stories/Foundation/theme/theme";
 
 const preview: Preview = {
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={themes}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
   parameters: {
     controls: {
       matchers: {

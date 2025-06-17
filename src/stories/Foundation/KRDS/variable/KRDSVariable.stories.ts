@@ -9,7 +9,7 @@ const resolvedTokeKeys = Object.keys(
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: "Foundation(Tokens)/Variable/KRDS",
+  title: "Foundation(Tokens)/KRDS/Variable",
   component: Variable,
   parameters: {
     // layout: "centered",

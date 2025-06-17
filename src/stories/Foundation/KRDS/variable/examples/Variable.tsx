@@ -11,7 +11,7 @@ export default function Variable({
 }: {
   variableKeys: keyof typeof resolvedToken;
 }) {
-  console.log("resolvedToken", resolvedToken);
+  console.log("디자인 토큰(resolvedToken)", resolvedToken);
 
   const target = resolvedToken?.[variableKeys];
 
