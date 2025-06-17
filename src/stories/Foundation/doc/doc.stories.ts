@@ -19,4 +19,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {};
+export const changeTheme: Story = {
+  name: "테마 변경",
+};

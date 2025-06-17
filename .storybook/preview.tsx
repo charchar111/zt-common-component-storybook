@@ -1,12 +1,13 @@
 import type { Preview } from "@storybook/react-vite";
 import "./reset.css"; // Import your global styles here
 import { ThemeProvider } from "styled-components";
-import themes from "../src/components/Foundation/themes/KRDS/theme";
+import themes from "../src/components/themes/themes";
 
 const preview: Preview = {
   decorators: [
     (Story) => (
-      <ThemeProvider theme={themes}>
+      // 임시로 고정 값을 넣음. 나중에 동적으로 변경 가능하도록 수정
+      <ThemeProvider theme={themes.KRDS}>
         <Story />
       </ThemeProvider>
     ),
