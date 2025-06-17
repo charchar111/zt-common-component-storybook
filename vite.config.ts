@@ -15,8 +15,9 @@ export default defineConfig({
       "@": resolve(__dirname, "src"),
       "@components": resolve(__dirname, "src/components"),
       "@stories": resolve(__dirname, "src/stories"),
-      "@public": resolve(__dirname, "public"),
       "@assets": resolve(__dirname, "src/assets"),
+      "@public": resolve(__dirname, "public"),
+      "@designTokens": resolve(__dirname, "design_tokens"),
     },
   },
 });

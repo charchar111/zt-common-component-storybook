@@ -20,6 +20,7 @@ import StyleDictionary from "style-dictionary";
     outputFileName: "tokens_resolved.json",
   },
 ]
+  // 1. json 토큰 파일을 가져오기
   .map(function getTokenFile(config) {
     console.log("✅ 피그마 토큰(단일 json파일) 변환 작업 시작");
     console.log("✅ 토큰 파일 읽기");
@@ -29,6 +30,13 @@ import StyleDictionary from "style-dictionary";
       tokens: JSON.parse(fs.readFileSync(config.inputPath, "utf-8")),
     };
   })
+  // 2.
+  // 이 파이프라인의 필요 이유: 피그마 토큰 파일은 중괄호로 참조 경로를 설정한다
+  // 이 경로는 기본으로 primitive를 보도록 설정되어 있는 것 같음(왜인지는 잘 모르겠음...)
+  // 문제는 js는 위 자동 설정을 몰라서 에러가 남
+  //
+  // 이 파이프 라인이 하는 일 : 피그마 중괄호 값 {color.high-contrast.gray.60}
+  // 같은 값에 접두사로 collection prefix("primitive/value-set")을 추가
   .map(({ config, tokens }) => {
     console.log("✅ 토큰 파일에 collection prefix 추가");
     const prefixedTokenFile = addPrefixCollectionName({
@@ -37,13 +45,14 @@ import StyleDictionary from "style-dictionary";
       collectionPrefix: config.COLLECTION_PREFIX,
     });
 
+    // 중간 결과물 생성
     // build1Path 경로가 존재하지 않으면 생성
     ensureDirectoryExists(path.dirname(config.build1Path));
 
     fs.writeFileSync(
       config.build1Path,
       JSON.stringify(prefixedTokenFile, null, 2),
-      "utf-8",
+      "utf-8"
     );
 
     return {
@@ -52,12 +61,27 @@ import StyleDictionary from "style-dictionary";
       outputFileName: config.outputFileName,
     };
   })
-  .map(async ({ outputPath, buildInputPath, outputFileName }) => {
-    console.log("✅ 토큰 파일에 alias resolve 작업");
 
-    await resolveFigmaAlias({ outputPath, buildInputPath, outputFileName });
-    // ✅ 중간 파일 삭제
-    fs.unlinkSync(buildInputPath);
+  .map(async ({ outputPath, buildInputPath, outputFileName }) => {
+    // 3. 피그마 중괄호 변수를 직접 가져와서 원시 값으로 치환
+    // 예: {color.high-contrast.gray.60} => rgb(100,100,100)
+    {
+      console.log("✅ 토큰 파일에 alias resolve 작업");
+
+      await resolveFigmaAlias({ outputPath, buildInputPath, outputFileName });
+      // ✅ 중간 파일 삭제
+      fs.unlinkSync(buildInputPath);
+    }
+
+    // test : 신규 공정
+    // 4. 3에서 완료된 json 파일을 ts 객체 파일로 전환(단, 3의 파일은 보존함)
+    {
+      console.log("✅토큰 파일을 ts 객체로 변환");
+      const jsonPath = path.resolve(outputPath, outputFileName);
+      const tsPath = jsonPath.replace(".json", ".ts");
+      convertJsonToTs({ jsonPath, tsPath });
+    }
+
     console.log("✅ 작업 완료");
   });
 
@@ -138,4 +162,19 @@ async function resolveFigmaAlias({
   });
   await sd.cleanAllPlatforms();
   await sd.buildAllPlatforms();
+}
+
+function convertJsonToTs({ jsonPath, tsPath }) {
+  const resolved = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
+  const tsContent = `/**
+ * 자동 생성된 디자인 토큰 파일 (from resolved JSON)
+ * ⚠️ 이 파일은 resolveToken.mjs에 의해 자동 생성됩니다.
+ */
+const tokens = ${JSON.stringify(resolved, null, 2)} as const;
+
+export default tokens;
+`;
+
+  fs.writeFileSync(tsPath, tsContent, "utf-8");
+  console.log("✅ TypeScript 토큰 파일 생성 완료 : \n", tsPath);
 }

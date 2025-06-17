@@ -29,8 +29,9 @@
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@stories/*": ["src/stories/*"],
+      "@assets/*": ["src/assets/*"],
       "@public/*": ["public/*"],
-      "@assets/*": ["src/assets/*"]
+      "@designTokens/*": ["design_tokens/*"]
     }
   },
   "include": ["src"]
