@@ -1,4 +1,4 @@
-import{j as n}from"./iframe-Ddyl0vjK.js";import{useMDXComponents as r}from"./index-DrUSLIee.js";import{M as s}from"./blocks-BSEsjOmb.js";import{M as i}from"./Modal_Basic.stories-BRKAuwPY.js";import"./index-Cr7GoJ8Y.js";import"./index-DIcCRqd8.js";import"./Basic-Cj6C3gcc.js";function o(t){const e={code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",...r(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(s,{of:i}),`
+import{j as n}from"./iframe-DLpz0ihO.js";import{useMDXComponents as r}from"./index-BTMQzPkp.js";import{M as s}from"./blocks-B0rTFDvk.js";import{M as i}from"./Modal_Basic.stories-CjYvd5jN.js";import"./index-Bhk6geoC.js";import"./index-Caq1TMZb.js";import"./Basic-CF8kXvwh.js";function o(t){const e={code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",...r(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(s,{of:i}),`
 `,n.jsx(e.h1,{id:"modal",children:"Modal"}),`
 `,n.jsx(e.p,{children:"이 모듈은 아래 KRDS를 참고하였습니다"}),`
 `,n.jsx("a",{target:"_blank",href:"https://www.krds.go.kr/html/site/component/component_04_05.html",children:n.jsx(e.p,{children:"KRDS - 컴포넌트 - 모달"})}),`

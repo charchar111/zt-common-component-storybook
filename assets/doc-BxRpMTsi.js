@@ -1,4 +1,4 @@
-import{j as n}from"./iframe-Ddyl0vjK.js";import{useMDXComponents as o}from"./index-DrUSLIee.js";import{M as i}from"./blocks-BSEsjOmb.js";import{D as t}from"./doc.stories-CF1nRJgv.js";import"./index-Cr7GoJ8Y.js";import"./index-DIcCRqd8.js";function r(s){const e={code:"code",h1:"h1",h2:"h2",h3:"h3",h5:"h5",p:"p",pre:"pre",...o(),...s.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{of:t}),`
+import{j as n}from"./iframe-DLpz0ihO.js";import{useMDXComponents as o}from"./index-BTMQzPkp.js";import{M as i}from"./blocks-B0rTFDvk.js";import{D as t}from"./doc.stories-DeCqaOir.js";import"./index-Bhk6geoC.js";import"./index-Caq1TMZb.js";function r(s){const e={code:"code",h1:"h1",h2:"h2",h3:"h3",h5:"h5",p:"p",pre:"pre",...o(),...s.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{of:t}),`
 `,n.jsx(e.h1,{id:"디자인-시스템---foundationtokens",children:"디자인 시스템 - Foundation(Tokens)"}),`
 `,n.jsx(e.p,{children:`이 페이지는 디자인 시스템 내에서 파운데이션(Foundation)에 해당합니다.\r
 파운데이션은 컴포넌트의 스타일에 사용될 CSS 속성 값들을 선별하여 key-value 객체로 만든 것입니다.\r
