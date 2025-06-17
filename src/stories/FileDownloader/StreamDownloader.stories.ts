@@ -43,7 +43,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 // 스토리북 메타데이터를 정의합니다.
 // 이 메타데이터는 스토리북이 컴포넌트를 렌더링하는 데 사용됩니다.
 const meta = {
-  title: "모듈/FileDownloader/StreamDownloader(미완성)",
+  title: "Components/FileDownloader/StreamDownloader(미완성)",
   component: StreamDownloader,
   parameters: {
     // 컴포넌트가 렌더링되는 캔버스 내 레이아웃을 중앙으로 설정

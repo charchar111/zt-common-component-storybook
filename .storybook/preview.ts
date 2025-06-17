@@ -17,6 +17,12 @@ const preview: Preview = {
       // 'off' - skip a11y checks entirely
       test: "todo",
     },
+
+    options: {
+      storySort: {
+        order: ["Foundation(Tokens)", "Components"],
+      },
+    },
   },
 };
 

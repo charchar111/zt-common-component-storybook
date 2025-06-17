@@ -25,7 +25,7 @@ import Basic from "./examples/Basic";
 // 스토리북 메타데이터를 정의합니다.
 // 이 메타데이터는 스토리북이 컴포넌트를 렌더링하는 데 사용됩니다.
 const meta = {
-  title: "모듈/Modal/Basic",
+  title: "Components/Modal/Basic",
   component: Basic,
   parameters: {
     // 컴포넌트가 렌더링되는 캔버스 내 레이아웃을 중앙으로 설정

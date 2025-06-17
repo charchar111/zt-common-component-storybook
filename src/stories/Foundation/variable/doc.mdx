@@ -1,0 +1,38 @@
+import {  Meta } from '@storybook/addon-docs/blocks';
+ 
+import * as FoundationVariableStories from './Variable.stories';
+ 
+<Meta of={FoundationVariableStories} />
+ 
+# 디자인 시스템 - Foundation(Tokens)
+
+해당 토큰은 figma에서 token-studio를 통해 다운로드하며, 단일한 JSON 파일 형식으로 다운받으면 된다.
+다운로드 받은 토큰 파일은 ./design_tokens/source/tokens.json에 위치시킨다.
+해당 파일은 피그마 고유의 문법(figma에서는 변수를 참조할 때 중괄호를 사용함)으로 구현되어 있으므로 전처리가 필요하다.
+전처리는 resolveToken.mjs 가 담당한다.
+
+## 전처리 스크립트 실행 방법
+
+### 의존성 설치
+
+스크립트 실행을 위해 먼저 아래 의존성을 설치한다.
+
+##### 최신 버전 설치
+
+```bash
+npm install --save-dev style-dictionary @tokens-studio/sd-transforms
+```
+
+##### 의존성 명시 설치
+
+```bash
+npm install --save-dev style-dictionary@4.0.0 @tokens-studio/sd-transforms@1.3.0
+```
+
+### 스크립트 실행
+
+해당 파일은 아래 명령어로 실행하며, 성공 시, ./design_tokens/source/tokens_resolved.json에 전처리된 토큰이 생성된다.
+
+```bash
+npm run resolveToken
+```
