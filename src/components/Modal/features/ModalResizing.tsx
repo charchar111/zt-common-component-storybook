@@ -240,7 +240,7 @@ const SContainer = styled.section<any>`
   height: 100%;
   /* 자식 요소에 그림자 렌더링이 안되서 끔. 문제 되면 다시 수정 */
   /* overflow: hidden; */
-  background-color: white;
+  /* background-color: white; */
   border-radius: 8px;
   pointer-events: auto;
   transition: all 0.1s ease-in-out;

@@ -88,7 +88,7 @@ const SLayout = styled.div<any & { $isDraggable?: boolean }>`
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  overflow: hidden;
+  /* overflow: hidden; */ // 높이 에러가 나서 끔
   color: white;
   background-color: #0665d4;
   gap: 10px;

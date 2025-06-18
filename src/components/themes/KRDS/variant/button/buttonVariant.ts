@@ -8,10 +8,12 @@ import {
   pcFontSize,
   semantic,
 } from "../../foundations/foundation";
+import { CommonVariantProps } from "@/components/themes/types/variant";
+import { commonVariant } from "../common/commonVariant";
 
 // foundation 이용
 // 옵셔널 접근자로, 에러가 나지 않도록 처리
-const color = {
+const $color = {
   // 여기다가 미리 선언
   "mode/light": {
     primary: css`
@@ -83,7 +85,6 @@ const color = {
 
       color: ${highContrastColor?.text?.["inverse-static"]?.value};
       border: ${highContrastColor?.button?.["text-border"]?.value};
-      border-radius: ${semantic?.radius?.["medium4"]?.value};
 
       &:hover {
         background-color: ${highContrastColor?.button?.["primary-fill-hover"]
@@ -154,7 +155,7 @@ const color = {
   },
 };
 
-const typo = {
+const $typo = {
   "responsive/pc": {
     small: css`
       font-size: ${pcFontSize?.label?.["small"]?.value};
@@ -173,29 +174,66 @@ const typo = {
   },
 };
 
+const $shape = {
+  medium4: css`
+    border-radius: ${semantic?.radius?.["medium4"]?.value};
+  `,
+  medium2: css`
+    border-radius: ${semantic?.radius?.["medium2"]?.value};
+  `,
+  small3: css`
+    border-radius: ${semantic?.radius?.["small3"]?.value};
+  `,
+};
+
 const layoutCommon = `
   display: inline-flex;
   justify-content: center;
   align-items: center;
 `;
 
-const layout = {
-  small: css`
+const $layout = {
+  xlarge: css`
     ${layoutCommon}
-
-    height: ${semantic?.["size-height"]?.["6"]?.value};
-    padding: 0 ${semantic?.["padding"]?.["5"]?.value};
+    padding: ${semantic?.["padding"]?.["6"]?.value} ${semantic?.["padding"]?.[
+      "8"
+    ]?.value};
   `,
   large: css`
     ${layoutCommon}
 
-    height: ${semantic?.["size-height"]?.["9"]?.value};
-    padding: 0 ${semantic?.["padding"]?.["8"]?.value};
+    padding: ${semantic?.["padding"]?.["5"]?.value} ${semantic?.["padding"]?.[
+      "7"
+    ]?.value};
+  `,
+  medium: css`
+    ${layoutCommon}
+    padding: ${semantic?.["padding"]?.["4"]?.value} ${semantic?.["padding"]?.[
+      "6"
+    ]?.value};
+  `,
+  small: css`
+    ${layoutCommon}
+
+    padding: ${semantic?.["padding"]?.["3"]?.value} ${semantic?.["padding"]?.[
+      "5"
+    ]?.value};
+  `,
+  xsmall: css`
+    ${layoutCommon}
+    padding: ${semantic?.["padding"]?.["2"]?.value} ${semantic?.["padding"]?.[
+      "4"
+    ]?.value};
   `,
 };
 
-export const buttonVariant = {
-  color,
-  typo,
-  layout,
+export const buttonVariant: Record<
+  keyof CommonVariantProps,
+  Record<string, any>
+> = {
+  $color,
+  $typo,
+  $shape,
+  $layout,
+  $elevation: commonVariant.elevation,
 };

@@ -25,24 +25,24 @@ const meta = {
   tags: ["autodocs"],
   argTypes: {
     $color: {
-      control: { type: "radio" }, // dropdown도 가능
-      options: ["primary", "secondary", "tertiary"],
+      control: { type: "select" }, // dropdown도 가능
+      options: [undefined, "primary", "secondary", "tertiary"],
     },
     $typo: {
-      control: { type: "radio" },
-      options: ["small", "large"],
+      control: { type: "select" },
+      options: [undefined, "small", "large"],
     },
     $shape: {
-      control: { type: "radio" },
-      options: ["medium3", "medium4", "large8"],
+      control: { type: "select" },
+      options: [undefined, "medium4", "medium2", "small3"],
     },
     $layout: {
-      control: { type: "radio" },
-      options: ["small", "large"],
+      control: { type: "select" },
+      options: [undefined, "xlarge", "large", "medium", "small", "xsmall"],
     },
     $elevation: {
-      control: { type: "radio" },
-      options: ["shadow1", "shadow2", "shadow3", "shadow4"],
+      control: { type: "select" },
+      options: [undefined, "shadow1", "shadow2", "shadow3", "shadow4"],
     },
   },
 } satisfies Meta<typeof Button>;

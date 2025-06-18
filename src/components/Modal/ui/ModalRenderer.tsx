@@ -4,6 +4,7 @@ import { createPortal } from "react-dom";
 import ModalContainer from "./ModalContainer";
 import { ImodalsAtom, useModalsStore } from "../data/atom/modalAtom";
 import { MODAL_INNER_BOUND_SIZE_UNIT_PIXEL } from "../constants/constants";
+import { AnimatePresence } from "motion/react";
 
 /**
  * @컨셉
@@ -127,9 +128,9 @@ export default function ModalRenderer() {
     });
   };
 
-  return !show
-    ? null
-    : createPortal(
+  return createPortal(
+    <AnimatePresence>
+      {show && (
         <Dim
           styles={dim?.styles}
           active={dim.active}
@@ -138,14 +139,16 @@ export default function ModalRenderer() {
         >
           {modals.map((el, idx) => (
             <ModalContainer
+              key={el.metadata.id}
               innerBoundSizeUnitPixel={dim.innerBoundSizeUnitPixel}
               onBringToFront={setModalTop(el.metadata.id)} // 복수의 모달 렌더링 시, 클릭한 모달이 위로 오도록 설정
               modal={el}
-              key={el.metadata.id}
             />
           ))}
-        </Dim>,
+        </Dim>
+      )}
+    </AnimatePresence>,
 
-        document.body
-      );
+    document.body
+  );
 }

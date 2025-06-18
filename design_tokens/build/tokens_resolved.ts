@@ -1801,10 +1801,10 @@ const tokens = {
           }
         },
         "1": {
-          "value": "0.062rem",
+          "value": "0.1rem",
           "type": "dimension",
           "original": {
-            "value": "0.062rem",
+            "value": "0.1rem",
             "type": "dimension"
           }
         }
@@ -1820,62 +1820,46 @@ const tokens = {
         }
       },
       "1": {
-        "value": "0.062rem",
+        "value": "0.1rem",
         "type": "dimension",
         "original": {
-          "value": "0.062rem",
+          "value": "0.1rem",
           "type": "dimension"
         }
       },
       "2": {
-        "value": "0.125rem",
+        "value": "0.2rem",
         "type": "dimension",
         "original": {
-          "value": "0.125rem",
+          "value": "0.2rem",
           "type": "dimension"
         }
       },
       "3": {
-        "value": "0.25rem",
+        "value": "0.4rem",
         "type": "dimension",
         "original": {
-          "value": "0.25rem",
+          "value": "0.4rem",
           "type": "dimension"
         }
       },
       "4": {
-        "value": "0.375rem",
+        "value": "0.6rem",
         "type": "dimension",
         "original": {
-          "value": "0.375rem",
+          "value": "0.6rem",
           "type": "dimension"
         }
       },
       "5": {
-        "value": "0.5rem",
+        "value": "0.8rem",
         "type": "dimension",
         "original": {
-          "value": "0.5rem",
+          "value": "0.8rem",
           "type": "dimension"
         }
       },
       "6": {
-        "value": "0.625rem",
-        "type": "dimension",
-        "original": {
-          "value": "0.625rem",
-          "type": "dimension"
-        }
-      },
-      "7": {
-        "value": "0.75rem",
-        "type": "dimension",
-        "original": {
-          "value": "0.75rem",
-          "type": "dimension"
-        }
-      },
-      "8": {
         "value": "1rem",
         "type": "dimension",
         "original": {
@@ -1883,31 +1867,23 @@ const tokens = {
           "type": "dimension"
         }
       },
+      "7": {
+        "value": "1.2rem",
+        "type": "dimension",
+        "original": {
+          "value": "1.2rem",
+          "type": "dimension"
+        }
+      },
+      "8": {
+        "value": "1.6rem",
+        "type": "dimension",
+        "original": {
+          "value": "1.6rem",
+          "type": "dimension"
+        }
+      },
       "9": {
-        "value": "1.25rem",
-        "type": "dimension",
-        "original": {
-          "value": "1.25rem",
-          "type": "dimension"
-        }
-      },
-      "10": {
-        "value": "1.5rem",
-        "type": "dimension",
-        "original": {
-          "value": "1.5rem",
-          "type": "dimension"
-        }
-      },
-      "11": {
-        "value": "1.75rem",
-        "type": "dimension",
-        "original": {
-          "value": "1.75rem",
-          "type": "dimension"
-        }
-      },
-      "12": {
         "value": "2rem",
         "type": "dimension",
         "original": {
@@ -1915,47 +1891,39 @@ const tokens = {
           "type": "dimension"
         }
       },
-      "13": {
-        "value": "2.25rem",
+      "10": {
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
-          "value": "2.25rem",
+          "value": "2.4rem",
+          "type": "dimension"
+        }
+      },
+      "11": {
+        "value": "2.8rem",
+        "type": "dimension",
+        "original": {
+          "value": "2.8rem",
+          "type": "dimension"
+        }
+      },
+      "12": {
+        "value": "3.2rem",
+        "type": "dimension",
+        "original": {
+          "value": "3.2rem",
+          "type": "dimension"
+        }
+      },
+      "13": {
+        "value": "3.6rem",
+        "type": "dimension",
+        "original": {
+          "value": "3.6rem",
           "type": "dimension"
         }
       },
       "14": {
-        "value": "2.5rem",
-        "type": "dimension",
-        "original": {
-          "value": "2.5rem",
-          "type": "dimension"
-        }
-      },
-      "15": {
-        "value": "2.75rem",
-        "type": "dimension",
-        "original": {
-          "value": "2.75rem",
-          "type": "dimension"
-        }
-      },
-      "16": {
-        "value": "3rem",
-        "type": "dimension",
-        "original": {
-          "value": "3rem",
-          "type": "dimension"
-        }
-      },
-      "17": {
-        "value": "3.5rem",
-        "type": "dimension",
-        "original": {
-          "value": "3.5rem",
-          "type": "dimension"
-        }
-      },
-      "18": {
         "value": "4rem",
         "type": "dimension",
         "original": {
@@ -1963,35 +1931,67 @@ const tokens = {
           "type": "dimension"
         }
       },
-      "19": {
-        "value": "4.5rem",
+      "15": {
+        "value": "4.4rem",
         "type": "dimension",
         "original": {
-          "value": "4.5rem",
+          "value": "4.4rem",
+          "type": "dimension"
+        }
+      },
+      "16": {
+        "value": "4.8rem",
+        "type": "dimension",
+        "original": {
+          "value": "4.8rem",
+          "type": "dimension"
+        }
+      },
+      "17": {
+        "value": "5.6rem",
+        "type": "dimension",
+        "original": {
+          "value": "5.6rem",
+          "type": "dimension"
+        }
+      },
+      "18": {
+        "value": "6.4rem",
+        "type": "dimension",
+        "original": {
+          "value": "6.4rem",
+          "type": "dimension"
+        }
+      },
+      "19": {
+        "value": "7.2rem",
+        "type": "dimension",
+        "original": {
+          "value": "7.2rem",
           "type": "dimension"
         }
       },
       "20": {
-        "value": "5rem",
+        "value": "8rem",
         "type": "dimension",
         "original": {
-          "value": "5rem",
+          "value": "8rem",
           "type": "dimension"
         }
       },
       "21": {
-        "value": "6rem",
+        "value": "9.6rem",
         "type": "dimension",
         "original": {
-          "value": "6rem",
+          "value": "9.6rem",
           "type": "dimension"
         }
       },
       "max": {
-        "value": "62.5rem",
+        "value": "100rem",
         "type": "dimension",
         "original": {
-          "value": "62.5rem",
+          "value": "100rem",
           "type": "dimension"
         }
       }
@@ -3524,68 +3524,68 @@ const tokens = {
     },
     "border-width": {
       "variable-regular": {
-        "value": "0.062rem",
+        "value": "0.1rem",
         "type": "dimension",
         "original": {
-          "value": "0.062rem",
+          "value": "0.1rem",
           "type": "dimension"
         }
       },
       "variable-medium": {
-        "value": "0.125rem",
+        "value": "0.2rem",
         "type": "dimension",
         "original": {
-          "value": "0.125rem",
+          "value": "0.2rem",
           "type": "dimension"
         }
       },
       "static-regular": {
-        "value": "0.062rem",
+        "value": "0.1rem",
         "type": "dimension",
         "original": {
-          "value": "0.062rem",
+          "value": "0.1rem",
           "type": "dimension"
         }
       },
       "static-medium": {
-        "value": "0.125rem",
+        "value": "0.2rem",
         "type": "dimension",
         "original": {
-          "value": "0.125rem",
+          "value": "0.2rem",
           "type": "dimension"
         }
       }
     },
     "shadow": {
       "y-3": {
-        "value": "0.5rem",
+        "value": "0.8rem",
         "type": "dimension",
         "original": {
-          "value": "0.5rem",
+          "value": "0.8rem",
           "type": "dimension"
         }
       },
       "blur-3": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
-          "value": "1rem",
+          "value": "1.6rem",
           "type": "dimension"
         }
       },
       "blur-4": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
-          "value": "1.5rem",
+          "value": "2.4rem",
           "type": "dimension"
         }
       },
       "y-4": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
-          "value": "1rem",
+          "value": "1.6rem",
           "type": "dimension"
         }
       }
@@ -5118,68 +5118,68 @@ const tokens = {
     },
     "border-width": {
       "variable-regular": {
-        "value": "0.125rem",
+        "value": "0.2rem",
         "type": "dimension",
         "original": {
-          "value": "0.125rem",
+          "value": "0.2rem",
           "type": "dimension"
         }
       },
       "variable-medium": {
-        "value": "0.188rem",
+        "value": "0.3rem",
         "type": "dimension",
         "original": {
-          "value": "0.188rem",
+          "value": "0.3rem",
           "type": "dimension"
         }
       },
       "static-regular": {
-        "value": "0.062rem",
+        "value": "0.1rem",
         "type": "dimension",
         "original": {
-          "value": "0.062rem",
+          "value": "0.1rem",
           "type": "dimension"
         }
       },
       "static-medium": {
-        "value": "0.125rem",
+        "value": "0.2rem",
         "type": "dimension",
         "original": {
-          "value": "0.125rem",
+          "value": "0.2rem",
           "type": "dimension"
         }
       }
     },
     "shadow": {
       "y-3": {
-        "value": "0.5rem",
+        "value": "0.8rem",
         "type": "dimension",
         "original": {
-          "value": "0.5rem",
+          "value": "0.8rem",
           "type": "dimension"
         }
       },
       "blur-3": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
-          "value": "1rem",
+          "value": "1.6rem",
           "type": "dimension"
         }
       },
       "blur-4": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
-          "value": "1.5rem",
+          "value": "2.4rem",
           "type": "dimension"
         }
       },
       "y-4": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
-          "value": "1rem",
+          "value": "1.6rem",
           "type": "dimension"
         }
       }
@@ -5189,108 +5189,132 @@ const tokens = {
     "font-size": {
       "display": {
         "large": {
-          "value": "3.75rem",
+          "value": "6rem",
           "type": "dimension",
           "original": {
-            "value": "3.75rem",
+            "value": "6rem",
             "type": "dimension"
           }
         },
         "medium": {
-          "value": "2.75rem",
+          "value": "4.4rem",
           "type": "dimension",
           "original": {
-            "value": "2.75rem",
+            "value": "4.4rem",
             "type": "dimension"
           }
         },
         "small": {
-          "value": "2.25rem",
+          "value": "3.6rem",
           "type": "dimension",
           "original": {
-            "value": "2.25rem",
+            "value": "3.6rem",
             "type": "dimension"
           }
         }
       },
       "body": {
         "large": {
-          "value": "1.188rem",
+          "value": "1.9rem",
           "type": "dimension",
           "original": {
-            "value": "1.188rem",
+            "value": "1.9rem",
             "type": "dimension"
           }
         },
         "medium": {
-          "value": "1.062rem",
+          "value": "1.7rem",
           "type": "dimension",
           "original": {
-            "value": "1.062rem",
+            "value": "1.7rem",
             "type": "dimension"
           }
         },
         "small": {
-          "value": "0.938rem",
+          "value": "1.5rem",
           "type": "dimension",
           "original": {
-            "value": "0.938rem",
+            "value": "1.5rem",
             "type": "dimension"
           }
         },
         "xsmall": {
-          "value": "0.812rem",
+          "value": "1.3rem",
           "type": "dimension",
           "original": {
-            "value": "0.812rem",
+            "value": "1.3rem",
             "type": "dimension"
           }
         }
       },
       "label": {
         "large": {
-          "value": "1.188rem",
+          "value": "1.9rem",
           "type": "dimension",
           "original": {
-            "value": "1.188rem",
+            "value": "1.9rem",
             "type": "dimension"
           }
         },
         "medium": {
-          "value": "1.062rem",
+          "value": "1.7rem",
           "type": "dimension",
           "original": {
-            "value": "1.062rem",
+            "value": "1.7rem",
             "type": "dimension"
           }
         },
         "small": {
-          "value": "0.938rem",
+          "value": "1.5rem",
           "type": "dimension",
           "original": {
-            "value": "0.938rem",
+            "value": "1.5rem",
             "type": "dimension"
           }
         },
         "xsmall": {
-          "value": "0.812rem",
+          "value": "1.3rem",
           "type": "dimension",
           "original": {
-            "value": "0.812rem",
+            "value": "1.3rem",
             "type": "dimension"
           }
         }
       },
       "heading": {
         "large": {
-          "value": "2rem",
+          "value": "3.2rem",
           "type": "dimension",
           "original": {
-            "value": "2rem",
+            "value": "3.2rem",
             "type": "dimension"
           }
         },
         "medium": {
+          "value": "2.4rem",
+          "type": "dimension",
+          "original": {
+            "value": "2.4rem",
+            "type": "dimension"
+          }
+        },
+        "small": {
+          "value": "1.9rem",
+          "type": "dimension",
+          "original": {
+            "value": "1.9rem",
+            "type": "dimension"
+          }
+        },
+        "xsmall": {
+          "value": "1.7rem",
+          "type": "dimension",
+          "original": {
+            "value": "1.7rem",
+            "type": "dimension"
+          }
+        },
+        "xxsmall": {
           "value": "1.5rem",
           "type": "dimension",
           "original": {
@@ -5298,41 +5322,49 @@ const tokens = {
             "type": "dimension"
           }
         },
-        "small": {
-          "value": "1.188rem",
-          "type": "dimension",
-          "original": {
-            "value": "1.188rem",
-            "type": "dimension"
-          }
-        },
-        "xsmall": {
-          "value": "1.062rem",
-          "type": "dimension",
-          "original": {
-            "value": "1.062rem",
-            "type": "dimension"
-          }
-        },
-        "xxsmall": {
-          "value": "0.938rem",
-          "type": "dimension",
-          "original": {
-            "value": "0.938rem",
-            "type": "dimension"
-          }
-        },
         "xlarge": {
-          "value": "2.5rem",
+          "value": "4rem",
           "type": "dimension",
           "original": {
-            "value": "2.5rem",
+            "value": "4rem",
             "type": "dimension"
           }
         }
       },
       "navigation": {
         "title-medium": {
+          "value": "2.4rem",
+          "type": "dimension",
+          "original": {
+            "value": "2.4rem",
+            "type": "dimension"
+          }
+        },
+        "title-small": {
+          "value": "1.9rem",
+          "type": "dimension",
+          "original": {
+            "value": "1.9rem",
+            "type": "dimension"
+          }
+        },
+        "depth-medium-bold": {
+          "value": "1.7rem",
+          "type": "dimension",
+          "original": {
+            "value": "1.7rem",
+            "type": "dimension"
+          }
+        },
+        "depth-medium": {
+          "value": "1.7rem",
+          "type": "dimension",
+          "original": {
+            "value": "1.7rem",
+            "type": "dimension"
+          }
+        },
+        "depth-small-bold": {
           "value": "1.5rem",
           "type": "dimension",
           "original": {
@@ -5340,43 +5372,11 @@ const tokens = {
             "type": "dimension"
           }
         },
-        "title-small": {
-          "value": "1.188rem",
-          "type": "dimension",
-          "original": {
-            "value": "1.188rem",
-            "type": "dimension"
-          }
-        },
-        "depth-medium-bold": {
-          "value": "1.062rem",
-          "type": "dimension",
-          "original": {
-            "value": "1.062rem",
-            "type": "dimension"
-          }
-        },
-        "depth-medium": {
-          "value": "1.062rem",
-          "type": "dimension",
-          "original": {
-            "value": "1.062rem",
-            "type": "dimension"
-          }
-        },
-        "depth-small-bold": {
-          "value": "0.938rem",
-          "type": "dimension",
-          "original": {
-            "value": "0.938rem",
-            "type": "dimension"
-          }
-        },
         "depth-small": {
-          "value": "0.938rem",
+          "value": "1.5rem",
           "type": "dimension",
           "original": {
-            "value": "0.938rem",
+            "value": "1.5rem",
             "type": "dimension"
           }
         }
@@ -5384,7 +5384,7 @@ const tokens = {
     },
     "gap-layout": {
       "header-breadcrumb": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -5392,7 +5392,7 @@ const tokens = {
         }
       },
       "left-contents": {
-        "value": "4rem",
+        "value": "6.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.18}",
@@ -5400,7 +5400,7 @@ const tokens = {
         }
       },
       "contents-right": {
-        "value": "2.5rem",
+        "value": "4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.14}",
@@ -5408,7 +5408,7 @@ const tokens = {
         }
       },
       "h1-h2": {
-        "value": "3rem",
+        "value": "4.8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.16}",
@@ -5416,7 +5416,7 @@ const tokens = {
         }
       },
       "h2-h2": {
-        "value": "5rem",
+        "value": "8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.20}",
@@ -5424,7 +5424,7 @@ const tokens = {
         }
       },
       "h2-h3": {
-        "value": "2.5rem",
+        "value": "4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.14}",
@@ -5432,7 +5432,7 @@ const tokens = {
         }
       },
       "h3-h3": {
-        "value": "4rem",
+        "value": "6.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.18}",
@@ -5440,7 +5440,7 @@ const tokens = {
         }
       },
       "h3-h4": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -5448,7 +5448,7 @@ const tokens = {
         }
       },
       "h4-h4": {
-        "value": "2.5rem",
+        "value": "4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.14}",
@@ -5456,7 +5456,7 @@ const tokens = {
         }
       },
       "h4-h5": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -5464,7 +5464,7 @@ const tokens = {
         }
       },
       "h5-h5": {
-        "value": "2rem",
+        "value": "3.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.12}",
@@ -5472,7 +5472,7 @@ const tokens = {
         }
       },
       "title-body-small": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -5480,7 +5480,7 @@ const tokens = {
         }
       },
       "title-body-medium": {
-        "value": "1.25rem",
+        "value": "2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.9}",
@@ -5488,7 +5488,7 @@ const tokens = {
         }
       },
       "title-body-large": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -5496,7 +5496,7 @@ const tokens = {
         }
       },
       "breadcrumb-h1": {
-        "value": "2.5rem",
+        "value": "4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.14}",
@@ -5504,7 +5504,7 @@ const tokens = {
         }
       },
       "contents-footer": {
-        "value": "4rem",
+        "value": "6.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.18}",
@@ -5512,7 +5512,7 @@ const tokens = {
         }
       },
       "text-text-large": {
-        "value": "1.25rem",
+        "value": "2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.9}",
@@ -5520,7 +5520,7 @@ const tokens = {
         }
       },
       "text-text-medium": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -5528,7 +5528,7 @@ const tokens = {
         }
       },
       "text-text-small": {
-        "value": "0.75rem",
+        "value": "1.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.7}",
@@ -5536,7 +5536,7 @@ const tokens = {
         }
       },
       "image-text-small": {
-        "value": "1.25rem",
+        "value": "2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.9}",
@@ -5544,7 +5544,7 @@ const tokens = {
         }
       },
       "image-text-medium": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -5552,7 +5552,7 @@ const tokens = {
         }
       },
       "image-text-large": {
-        "value": "2rem",
+        "value": "3.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.12}",
@@ -5562,7 +5562,7 @@ const tokens = {
     },
     "padding-card": {
       "large": {
-        "value": "2.5rem",
+        "value": "4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.14}",
@@ -5570,7 +5570,7 @@ const tokens = {
         }
       },
       "medium": {
-        "value": "2rem",
+        "value": "3.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.12}",
@@ -5578,7 +5578,7 @@ const tokens = {
         }
       },
       "small": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -5586,7 +5586,7 @@ const tokens = {
         }
       },
       "xsmall": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -5599,100 +5599,48 @@ const tokens = {
     "font-size": {
       "display": {
         "large": {
-          "value": "2.75rem",
+          "value": "4.4rem",
           "type": "dimension",
           "original": {
-            "value": "2.75rem",
+            "value": "4.4rem",
             "type": "dimension"
           }
         },
         "medium": {
-          "value": "2rem",
+          "value": "3.2rem",
           "type": "dimension",
           "original": {
-            "value": "2rem",
+            "value": "3.2rem",
             "type": "dimension"
           }
         },
         "small": {
-          "value": "1.75rem",
+          "value": "2.8rem",
           "type": "dimension",
           "original": {
-            "value": "1.75rem",
+            "value": "2.8rem",
             "type": "dimension"
           }
         }
       },
       "body": {
         "large": {
-          "value": "1.188rem",
+          "value": "1.9rem",
           "type": "dimension",
           "original": {
-            "value": "1.188rem",
+            "value": "1.9rem",
             "type": "dimension"
           }
         },
         "medium": {
-          "value": "1.062rem",
+          "value": "1.7rem",
           "type": "dimension",
           "original": {
-            "value": "1.062rem",
+            "value": "1.7rem",
             "type": "dimension"
           }
         },
         "small": {
-          "value": "0.938rem",
-          "type": "dimension",
-          "original": {
-            "value": "0.938rem",
-            "type": "dimension"
-          }
-        },
-        "xsmall": {
-          "value": "0.812rem",
-          "type": "dimension",
-          "original": {
-            "value": "0.812rem",
-            "type": "dimension"
-          }
-        }
-      },
-      "label": {
-        "large": {
-          "value": "1.188rem",
-          "type": "dimension",
-          "original": {
-            "value": "1.188rem",
-            "type": "dimension"
-          }
-        },
-        "medium": {
-          "value": "1.062rem",
-          "type": "dimension",
-          "original": {
-            "value": "1.062rem",
-            "type": "dimension"
-          }
-        },
-        "small": {
-          "value": "0.938rem",
-          "type": "dimension",
-          "original": {
-            "value": "0.938rem",
-            "type": "dimension"
-          }
-        },
-        "xsmall": {
-          "value": "0.812rem",
-          "type": "dimension",
-          "original": {
-            "value": "0.812rem",
-            "type": "dimension"
-          }
-        }
-      },
-      "heading": {
-        "large": {
           "value": "1.5rem",
           "type": "dimension",
           "original": {
@@ -5700,93 +5648,145 @@ const tokens = {
             "type": "dimension"
           }
         },
-        "medium": {
-          "value": "1.375rem",
+        "xsmall": {
+          "value": "1.3rem",
           "type": "dimension",
           "original": {
-            "value": "1.375rem",
+            "value": "1.3rem",
+            "type": "dimension"
+          }
+        }
+      },
+      "label": {
+        "large": {
+          "value": "1.9rem",
+          "type": "dimension",
+          "original": {
+            "value": "1.9rem",
+            "type": "dimension"
+          }
+        },
+        "medium": {
+          "value": "1.7rem",
+          "type": "dimension",
+          "original": {
+            "value": "1.7rem",
             "type": "dimension"
           }
         },
         "small": {
-          "value": "1.188rem",
+          "value": "1.5rem",
           "type": "dimension",
           "original": {
-            "value": "1.188rem",
+            "value": "1.5rem",
             "type": "dimension"
           }
         },
         "xsmall": {
-          "value": "1.062rem",
+          "value": "1.3rem",
           "type": "dimension",
           "original": {
-            "value": "1.062rem",
+            "value": "1.3rem",
+            "type": "dimension"
+          }
+        }
+      },
+      "heading": {
+        "large": {
+          "value": "2.4rem",
+          "type": "dimension",
+          "original": {
+            "value": "2.4rem",
+            "type": "dimension"
+          }
+        },
+        "medium": {
+          "value": "2.2rem",
+          "type": "dimension",
+          "original": {
+            "value": "2.2rem",
+            "type": "dimension"
+          }
+        },
+        "small": {
+          "value": "1.9rem",
+          "type": "dimension",
+          "original": {
+            "value": "1.9rem",
+            "type": "dimension"
+          }
+        },
+        "xsmall": {
+          "value": "1.7rem",
+          "type": "dimension",
+          "original": {
+            "value": "1.7rem",
             "type": "dimension"
           }
         },
         "xxsmall": {
-          "value": "0.938rem",
+          "value": "1.5rem",
           "type": "dimension",
           "original": {
-            "value": "0.938rem",
+            "value": "1.5rem",
             "type": "dimension"
           }
         },
         "xlarge": {
-          "value": "1.75rem",
+          "value": "2.8rem",
           "type": "dimension",
           "original": {
-            "value": "1.75rem",
+            "value": "2.8rem",
             "type": "dimension"
           }
         }
       },
       "navigation": {
         "title-medium": {
-          "value": "1.375rem",
+          "value": "2.2rem",
           "type": "dimension",
           "original": {
-            "value": "1.375rem",
+            "value": "2.2rem",
             "type": "dimension"
           }
         },
         "title-small": {
-          "value": "1.188rem",
+          "value": "1.9rem",
           "type": "dimension",
           "original": {
-            "value": "1.188rem",
+            "value": "1.9rem",
             "type": "dimension"
           }
         },
         "depth-medium-bold": {
-          "value": "1.062rem",
+          "value": "1.7rem",
           "type": "dimension",
           "original": {
-            "value": "1.062rem",
+            "value": "1.7rem",
             "type": "dimension"
           }
         },
         "depth-medium": {
-          "value": "1.062rem",
+          "value": "1.7rem",
           "type": "dimension",
           "original": {
-            "value": "1.062rem",
+            "value": "1.7rem",
             "type": "dimension"
           }
         },
         "depth-small-bold": {
-          "value": "0.938rem",
+          "value": "1.5rem",
           "type": "dimension",
           "original": {
-            "value": "0.938rem",
+            "value": "1.5rem",
             "type": "dimension"
           }
         },
         "depth-small": {
-          "value": "0.938rem",
+          "value": "1.5rem",
           "type": "dimension",
           "original": {
-            "value": "0.938rem",
+            "value": "1.5rem",
             "type": "dimension"
           }
         }
@@ -5794,7 +5794,7 @@ const tokens = {
     },
     "gap-layout": {
       "header-breadcrumb": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -5818,7 +5818,7 @@ const tokens = {
         }
       },
       "h1-h2": {
-        "value": "2rem",
+        "value": "3.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.12}",
@@ -5826,7 +5826,7 @@ const tokens = {
         }
       },
       "h2-h2": {
-        "value": "2.5rem",
+        "value": "4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.14}",
@@ -5834,7 +5834,7 @@ const tokens = {
         }
       },
       "h2-h3": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -5842,7 +5842,7 @@ const tokens = {
         }
       },
       "h3-h3": {
-        "value": "2rem",
+        "value": "3.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.12}",
@@ -5850,7 +5850,7 @@ const tokens = {
         }
       },
       "h3-h4": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -5858,7 +5858,7 @@ const tokens = {
         }
       },
       "h4-h4": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -5866,7 +5866,7 @@ const tokens = {
         }
       },
       "h4-h5": {
-        "value": "0.75rem",
+        "value": "1.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.7}",
@@ -5874,7 +5874,7 @@ const tokens = {
         }
       },
       "h5-h5": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -5882,7 +5882,7 @@ const tokens = {
         }
       },
       "title-body-small": {
-        "value": "0.5rem",
+        "value": "0.8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.5}",
@@ -5890,7 +5890,7 @@ const tokens = {
         }
       },
       "title-body-medium": {
-        "value": "0.75rem",
+        "value": "1.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.7}",
@@ -5898,7 +5898,7 @@ const tokens = {
         }
       },
       "title-body-large": {
-        "value": "1.25rem",
+        "value": "2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.9}",
@@ -5906,7 +5906,7 @@ const tokens = {
         }
       },
       "breadcrumb-h1": {
-        "value": "2rem",
+        "value": "3.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.12}",
@@ -5914,7 +5914,7 @@ const tokens = {
         }
       },
       "contents-footer": {
-        "value": "2.5rem",
+        "value": "4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.14}",
@@ -5922,7 +5922,7 @@ const tokens = {
         }
       },
       "text-text-large": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -5930,7 +5930,7 @@ const tokens = {
         }
       },
       "text-text-medium": {
-        "value": "0.75rem",
+        "value": "1.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.7}",
@@ -5938,7 +5938,7 @@ const tokens = {
         }
       },
       "text-text-small": {
-        "value": "0.625rem",
+        "value": "1rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.6}",
@@ -5946,7 +5946,7 @@ const tokens = {
         }
       },
       "image-text-small": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -5954,7 +5954,7 @@ const tokens = {
         }
       },
       "image-text-medium": {
-        "value": "1.25rem",
+        "value": "2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.9}",
@@ -5962,7 +5962,7 @@ const tokens = {
         }
       },
       "image-text-large": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -5972,7 +5972,7 @@ const tokens = {
     },
     "padding-card": {
       "large": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -5980,7 +5980,7 @@ const tokens = {
         }
       },
       "medium": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -5988,7 +5988,7 @@ const tokens = {
         }
       },
       "small": {
-        "value": "1.25rem",
+        "value": "2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.9}",
@@ -5996,7 +5996,7 @@ const tokens = {
         }
       },
       "xsmall": {
-        "value": "0.75rem",
+        "value": "1.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.7}",
@@ -6008,7 +6008,7 @@ const tokens = {
   "semantic/value-set": {
     "gap": {
       "1": {
-        "value": "0.125rem",
+        "value": "0.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.2}",
@@ -6016,7 +6016,7 @@ const tokens = {
         }
       },
       "2": {
-        "value": "0.25rem",
+        "value": "0.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.3}",
@@ -6024,7 +6024,7 @@ const tokens = {
         }
       },
       "3": {
-        "value": "0.5rem",
+        "value": "0.8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.5}",
@@ -6032,7 +6032,7 @@ const tokens = {
         }
       },
       "4": {
-        "value": "0.75rem",
+        "value": "1.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.7}",
@@ -6040,7 +6040,7 @@ const tokens = {
         }
       },
       "5": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -6048,7 +6048,7 @@ const tokens = {
         }
       },
       "6": {
-        "value": "1.25rem",
+        "value": "2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.9}",
@@ -6056,7 +6056,7 @@ const tokens = {
         }
       },
       "7": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -6064,7 +6064,7 @@ const tokens = {
         }
       },
       "8": {
-        "value": "2rem",
+        "value": "3.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.12}",
@@ -6072,7 +6072,7 @@ const tokens = {
         }
       },
       "9": {
-        "value": "2.5rem",
+        "value": "4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.14}",
@@ -6080,7 +6080,7 @@ const tokens = {
         }
       },
       "10": {
-        "value": "3rem",
+        "value": "4.8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.16}",
@@ -6088,7 +6088,7 @@ const tokens = {
         }
       },
       "11": {
-        "value": "4rem",
+        "value": "6.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.18}",
@@ -6096,7 +6096,7 @@ const tokens = {
         }
       },
       "12": {
-        "value": "5rem",
+        "value": "8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.20}",
@@ -6106,7 +6106,7 @@ const tokens = {
     },
     "padding": {
       "1": {
-        "value": "0.125rem",
+        "value": "0.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.2}",
@@ -6114,7 +6114,7 @@ const tokens = {
         }
       },
       "2": {
-        "value": "0.25rem",
+        "value": "0.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.3}",
@@ -6122,7 +6122,7 @@ const tokens = {
         }
       },
       "3": {
-        "value": "0.5rem",
+        "value": "0.8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.5}",
@@ -6130,7 +6130,7 @@ const tokens = {
         }
       },
       "4": {
-        "value": "0.625rem",
+        "value": "1rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.6}",
@@ -6138,7 +6138,7 @@ const tokens = {
         }
       },
       "5": {
-        "value": "0.75rem",
+        "value": "1.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.7}",
@@ -6146,7 +6146,7 @@ const tokens = {
         }
       },
       "6": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -6154,7 +6154,7 @@ const tokens = {
         }
       },
       "7": {
-        "value": "1.25rem",
+        "value": "2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.9}",
@@ -6162,7 +6162,7 @@ const tokens = {
         }
       },
       "8": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -6170,7 +6170,7 @@ const tokens = {
         }
       },
       "9": {
-        "value": "2rem",
+        "value": "3.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.12}",
@@ -6178,7 +6178,7 @@ const tokens = {
         }
       },
       "10": {
-        "value": "2.5rem",
+        "value": "4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.14}",
@@ -6188,7 +6188,7 @@ const tokens = {
     },
     "size-height": {
       "1": {
-        "value": "0.5rem",
+        "value": "0.8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.5}",
@@ -6196,7 +6196,7 @@ const tokens = {
         }
       },
       "2": {
-        "value": "1rem",
+        "value": "1.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.8}",
@@ -6204,7 +6204,7 @@ const tokens = {
         }
       },
       "3": {
-        "value": "1.25rem",
+        "value": "2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.9}",
@@ -6212,7 +6212,7 @@ const tokens = {
         }
       },
       "4": {
-        "value": "1.5rem",
+        "value": "2.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.10}",
@@ -6220,7 +6220,7 @@ const tokens = {
         }
       },
       "5": {
-        "value": "2rem",
+        "value": "3.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.12}",
@@ -6228,7 +6228,7 @@ const tokens = {
         }
       },
       "6": {
-        "value": "2.5rem",
+        "value": "4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.14}",
@@ -6236,7 +6236,7 @@ const tokens = {
         }
       },
       "7": {
-        "value": "3rem",
+        "value": "4.8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.16}",
@@ -6244,7 +6244,7 @@ const tokens = {
         }
       },
       "8": {
-        "value": "3.5rem",
+        "value": "5.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.17}",
@@ -6252,7 +6252,7 @@ const tokens = {
         }
       },
       "9": {
-        "value": "4rem",
+        "value": "6.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.18}",
@@ -6260,7 +6260,7 @@ const tokens = {
         }
       },
       "10": {
-        "value": "4.5rem",
+        "value": "7.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.19}",
@@ -6268,7 +6268,7 @@ const tokens = {
         }
       },
       "11": {
-        "value": "5rem",
+        "value": "8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.20}",
@@ -6278,7 +6278,7 @@ const tokens = {
     },
     "radius": {
       "xsmall1": {
-        "value": "0.125rem",
+        "value": "0.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.2}",
@@ -6286,7 +6286,7 @@ const tokens = {
         }
       },
       "xsmall2": {
-        "value": "0.125rem",
+        "value": "0.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.2}",
@@ -6294,7 +6294,7 @@ const tokens = {
         }
       },
       "xsmall3": {
-        "value": "0.125rem",
+        "value": "0.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.2}",
@@ -6302,7 +6302,7 @@ const tokens = {
         }
       },
       "small1": {
-        "value": "0.25rem",
+        "value": "0.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.3}",
@@ -6310,7 +6310,7 @@ const tokens = {
         }
       },
       "small2": {
-        "value": "0.25rem",
+        "value": "0.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.3}",
@@ -6318,7 +6318,7 @@ const tokens = {
         }
       },
       "small3": {
-        "value": "0.25rem",
+        "value": "0.4rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.3}",
@@ -6326,7 +6326,7 @@ const tokens = {
         }
       },
       "medium1": {
-        "value": "0.375rem",
+        "value": "0.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.4}",
@@ -6334,7 +6334,7 @@ const tokens = {
         }
       },
       "medium2": {
-        "value": "0.375rem",
+        "value": "0.6rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.4}",
@@ -6342,7 +6342,7 @@ const tokens = {
         }
       },
       "medium3": {
-        "value": "0.5rem",
+        "value": "0.8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.5}",
@@ -6350,7 +6350,7 @@ const tokens = {
         }
       },
       "medium4": {
-        "value": "0.5rem",
+        "value": "0.8rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.5}",
@@ -6358,7 +6358,7 @@ const tokens = {
         }
       },
       "large1": {
-        "value": "0.625rem",
+        "value": "1rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.6}",
@@ -6366,7 +6366,7 @@ const tokens = {
         }
       },
       "large2": {
-        "value": "0.625rem",
+        "value": "1rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.6}",
@@ -6374,7 +6374,7 @@ const tokens = {
         }
       },
       "xlarge1": {
-        "value": "0.75rem",
+        "value": "1.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.7}",
@@ -6382,7 +6382,7 @@ const tokens = {
         }
       },
       "xlarge2": {
-        "value": "0.75rem",
+        "value": "1.2rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.7}",
@@ -6390,7 +6390,7 @@ const tokens = {
         }
       },
       "max": {
-        "value": "62.5rem",
+        "value": "100rem",
         "type": "dimension",
         "original": {
           "value": "{primitive/value-set.number.max}",
@@ -6398,6 +6398,17 @@ const tokens = {
         }
       }
     }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "primitive/value-set",
+      "mode/light",
+      "mode/high-contrast",
+      "responsive/pc",
+      "responsive/mobile",
+      "semantic/value-set"
+    ]
   }
 } as const;
 

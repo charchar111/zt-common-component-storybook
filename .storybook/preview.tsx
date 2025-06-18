@@ -1,5 +1,7 @@
 import type { Preview } from "@storybook/react-vite";
-import "./reset.css"; // Import your global styles here
+import "./reset.css";
+import "./index.css"; // reset.css랑 위아래 순서 바꾸지 마세요. font 속성이 꼬입니다
+
 import { ThemeProvider } from "styled-components";
 import themes from "../src/components/themes/themes";
 

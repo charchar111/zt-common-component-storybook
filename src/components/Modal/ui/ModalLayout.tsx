@@ -11,7 +11,7 @@ export default function ModalLayout({
     </SLayout>
   );
 }
-const SLayout = styled.div<any>`
+const SLayout = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;

@@ -23,6 +23,7 @@ import {
 } from "../../types/state";
 import { extractNumberFromStyleValue } from "../../util/format";
 import { SyntheticListenerMap } from "@dnd-kit/core/dist/hooks/utilities";
+import { motion } from "motion/react";
 
 interface IModalDraggableItem {
   id: string;
@@ -60,6 +61,10 @@ function ModalDraggableItem({
 
   return (
     <SLayout
+      key={id}
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0, transition: { duration: 0.15 } }}
+      exit={{ opacity: 0, y: -10, transition: { duration: 0.15 } }}
       ref={setNodeRef}
       {...attributes}
       className="ModalDraggable__SLayout"
@@ -69,9 +74,11 @@ function ModalDraggableItem({
   );
 }
 
-const SLayout = styled.div`
+const SLayout = styled(motion.div)`
   /* position: absolute; */
   /* overflow: auto; */
+  background-color: white;
+  border-radius: 8px;
   width: 100%;
   height: 100%;
 `;
@@ -181,10 +188,12 @@ export default function ModalDraggable({
 
   return (
     <DndContext
+      key={id}
       sensors={sensors}
       onDragMove={isActiveDrag ? handleDragMove : undefined}
     >
       <ModalDraggableItem
+        key={id}
         onMouseDown={isActiveDrag ? handleDragStart : undefined}
         id={id}
         setModalController={setModalController}

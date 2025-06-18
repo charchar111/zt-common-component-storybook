@@ -6,7 +6,13 @@ import {
 } from "../../utils/utils";
 
 const BaseButtonCss = css<CommonVariantProps>`
-  ${({ $color = "primary", $typo = "large", $layout = "large", theme }) => {
+  ${({
+    $color = "primary",
+    $typo = "large",
+    $shape = "medium4",
+    $layout = "xlarge",
+    theme,
+  }) => {
     const getVariantStyleButton = getThemeVariantValue({
       theme,
       component: "button",
@@ -14,18 +20,18 @@ const BaseButtonCss = css<CommonVariantProps>`
 
     return [
       ...(getVariantStyleButton({
-        category: "color",
+        category: "$color",
         context: `mode/${theme?.options?.mode}`,
         name: $color,
       }) || []),
       ...(getVariantStyleButton({
-        category: "typo",
+        category: "$typo",
         context: `responsive/${theme?.options?.responsive}`,
         name: $typo,
       }) || []),
 
       ...(getVariantStyleButton({
-        category: "layout",
+        category: "$layout",
         name: $layout,
       }) || []),
     ];

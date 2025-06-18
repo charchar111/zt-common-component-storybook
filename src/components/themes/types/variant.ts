@@ -1,7 +1,9 @@
 // 주요 variant 타입. (강제 아님)
+// 이 부분은 디자인 토큰의 인덱스 타입을 가져와야 할려나
+
 type VariantColor = "primary" | "secondary" | "tertiary";
 type VariantSize = "small" | "large";
-type VariantShape = "medium3" | "medium4" | "large8";
+type VariantShape = string;
 type VariantLayout = "small" | "large";
 type VariantElevation = "shadow1" | "shadow2" | "shadow3" | "shadow4";
 

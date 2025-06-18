@@ -16,7 +16,8 @@ export const getThemeVariantValue =
     context,
     name,
   }: {
-    category: string;
+    // todo: 나중에 icon을 추가하는 방식도 고려 해야 함
+    category: "$color" | "$typo" | "$shape" | "$layout" | "$elevation";
     context?: string;
     name: string;
   }) => {

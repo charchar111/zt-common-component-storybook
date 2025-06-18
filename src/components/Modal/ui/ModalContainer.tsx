@@ -111,6 +111,7 @@ export default function ModalContainer({
 
   return (
     <ModalResizing
+      key={modal.metadata.id}
       active={modalFlag.isResizable && !modalFlag.isMaximize}
       modalBbox={modalBbox}
       setModalBbox={setModalBbox}

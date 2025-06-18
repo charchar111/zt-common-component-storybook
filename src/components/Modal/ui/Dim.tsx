@@ -5,6 +5,7 @@ import {
   ImodalsAtomDim,
   useModalsStore,
 } from "../data/atom/modalAtom";
+import { AnimatePresence, motion } from "motion/react";
 
 interface IDim {
   active: boolean;
@@ -24,13 +25,19 @@ export default function Dim({
 
   return (
     <SDimRoot
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.2 } }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
       $innerBoundSizeUnitPixel={innerBoundSizeUnitPixel}
       style={styles?.dimRoot}
       className={`dim_root`}
       $active={active}
     >
       <SInnerDim
-        style={styles?.dimRoot}
+        // initial={{ y: -10 }}
+        // animate={{ y: 0, transition: { duration: 0.15 } }}
+        // exit={{ y: -10, transition: { duration: 0.15 } }}
+        style={styles?.dimRoot as any}
         className={`dim_inner`}
         onClick={(event: React.MouseEvent) => {
           if (event.target !== event.currentTarget) return;
@@ -58,7 +65,7 @@ const dimStyle = {
   `,
 };
 
-const SDimRoot = styled.section<any>`
+const SDimRoot = styled(motion.section)<any>`
   position: fixed;
   /* TODO: 모달용 z-index 상수로 교체 */
   z-index: 90;
@@ -82,7 +89,7 @@ const SDimRoot = styled.section<any>`
 `;
 // 모달의 포지션을 내부로 제한하기 위한 레이아웃
 // 이거 없으면 re-resizable 모달을 내부로 가두기 어려움
-const SInnerDim = styled.section<any>`
+const SInnerDim = styled(motion.div)`
   position: relative;
   width: 100%;
   height: 100%;
