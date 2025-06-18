@@ -227,13 +227,12 @@ const $layout = {
   `,
 };
 
-export const buttonVariant: Record<
-  keyof CommonVariantProps,
-  Record<string, any>
+export const buttonVariant: Omit<
+  Record<keyof CommonVariantProps, Record<string, any>>,
+  "$elevation"
 > = {
   $color,
   $typo,
   $shape,
   $layout,
-  $elevation: commonVariant.elevation,
 };

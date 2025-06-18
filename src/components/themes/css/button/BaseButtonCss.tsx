@@ -11,6 +11,7 @@ const BaseButtonCss = css<CommonVariantProps>`
     $typo = "large",
     $shape = "medium4",
     $layout = "xlarge",
+    $elevation = "shadow1",
     theme,
   }) => {
     const getVariantStyleButton = getThemeVariantValue({
@@ -24,16 +25,29 @@ const BaseButtonCss = css<CommonVariantProps>`
         context: `mode/${theme?.options?.mode}`,
         name: $color,
       }) || []),
+
       ...(getVariantStyleButton({
         category: "$typo",
         context: `responsive/${theme?.options?.responsive}`,
         name: $typo,
+      }) || []),
+      ...(getVariantStyleButton({
+        category: "$shape",
+        name: $shape,
       }) || []),
 
       ...(getVariantStyleButton({
         category: "$layout",
         name: $layout,
       }) || []),
+      ...getThemeVariantValue({
+        theme,
+        component: "common",
+      })({
+        category: "$elevation",
+        context: `common`,
+        name: $elevation,
+      }),
     ];
   }}
 

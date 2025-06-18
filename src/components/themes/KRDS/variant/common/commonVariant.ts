@@ -38,12 +38,12 @@ const commonElevation = {
 };
 
 // 얘는 특이한게, 다 똑같음. 그래서, 별도로 공용인 common 이라고 만들어줌줌
-export const elevation = {
-  "common": commonElevation,
+export const $elevation = {
+  common: commonElevation,
   "mode/light": commonElevation,
   "mode/high-contrast": commonElevation,
 };
 
 export const commonVariant = {
-  elevation,
+  $elevation: $elevation,
 };

@@ -9,7 +9,7 @@ import {
   primitiveColor,
   semantic,
 } from "../../foundations/foundation";
-import { elevation } from "../common/commonVariant";
+import { $elevation } from "../common/commonVariant";
 
 // foundation 이용
 // 옵셔널 접근자로, 에러가 나지 않도록 처리
@@ -24,7 +24,7 @@ const color = {
       color: ${lightColor?.text?.["inverse-static"]?.value};
     `,
 
-    "side_navigation_3depth": css`
+    side_navigation_3depth: css`
       background-color: ${lightColor.action.white.value};
       border-color: ${lightColor.divider["gray-light"].value};
       color: ${lightColor.text.basic.value};
@@ -39,7 +39,7 @@ const color = {
       color: ${highContrastColor?.text?.["inverse-static"]?.value};
     `,
 
-    "side_navigation_3depth": css`
+    side_navigation_3depth: css`
       background-color: ${highContrastColor.action.white.value};
       border-color: ${highContrastColor.divider["gray-light"].value};
       color: ${highContrastColor.text.basic.value};
@@ -89,5 +89,5 @@ export const sideMenuVariant = {
   color,
   typo,
   layout,
-  elevation,
+  $elevation,
 };

@@ -8,14 +8,14 @@ import {
   pcFontSize,
   semantic,
 } from "../../foundations/foundation";
-import { elevation } from "../common/commonVariant";
+import { $elevation } from "../common/commonVariant";
 
 // foundation 이용
 // 옵셔널 접근자로, 에러가 나지 않도록 처리
 const color = {
   // 여기다가 미리 선언
   "mode/light": {
-    "primary": css`
+    primary: css`
       background: ${lightColor?.surface?.["white-subtler"]?.value};
       /* background: ${lightColor?.surface?.white?.value}; */
 
@@ -23,7 +23,7 @@ const color = {
     `,
   },
   "mode/high-contrast": {
-    "primary": css`
+    primary: css`
       background: ${highContrastColor?.surface?.["white-subtler"]?.value};
       color: ${highContrastColor?.text?.["basic"]?.value};
     `,
@@ -50,5 +50,5 @@ const color = {
 
 export const modalVariant = {
   color,
-  elevation,
+  $elevation,
 };
